@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CONTY［コンティ］ | 名張市桔梗が丘のヘアサロン</title>
-  <meta name="description" content="名張市桔梗が丘のヘアサロン CONTY［コンティ］。髪質改善、縮毛矯正、ヘッドスパ、カット、カラーまで一人ひとりに寄り添う美容室。" />
+  <title>ALEGRIA HAIR | 名張市鴻之台のプライベートヘアサロン</title>
+  <meta name="description" content="名張市鴻之台、名張市役所そばの美容室 ALEGRIA HAIR。丁寧なカウンセリングと炭酸ケアで髪本来の美しさを引き出すプライベートサロン。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,17 +12,18 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+            display: ['"Instrument Serif"', 'Georgia', 'serif']
           },
           colors: {
-            ink: '#151515',
-            mist: '#f5f7f4',
-            sage: '#83906f',
-            clay: '#b66f55',
-            shell: '#fffaf5'
+            ink: '#14110f',
+            paper: '#fbf8f2',
+            bone: '#efe5d8',
+            moss: '#67735c',
+            rust: '#a4553b',
+            bluegray: '#657486'
           },
           boxShadow: {
-            soft: '0 28px 80px rgba(20, 28, 18, .16)'
+            depth: '0 26px 70px rgba(20,17,15,.15)'
           }
         }
       }
@@ -30,56 +31,57 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     body {
       background:
-        radial-gradient(circle at 12% 18%, rgba(131, 144, 111, .16), transparent 28rem),
-        linear-gradient(180deg, #fffaf5 0%, #f5f7f4 42%, #fffaf5 100%);
-      color: #151515;
+        linear-gradient(105deg, rgba(239,229,216,.85) 0 36%, transparent 36% 100%),
+        linear-gradient(180deg, #fbf8f2 0%, #f7f1e8 48%, #fbf8f2 100%);
+      color: #14110f;
     }
-    .tight { letter-spacing: -.055em; }
-    .vertical-word { writing-mode: vertical-rl; text-orientation: mixed; }
+    .tight { letter-spacing: -.065em; }
+    .body-copy { line-height: 2.05; }
     .reveal {
       opacity: 0;
-      transform: translateY(42px);
-      transition: opacity .9s cubic-bezier(.2, .8, .2, 1), transform .9s cubic-bezier(.2, .8, .2, 1);
+      transform: translateY(44px);
+      transition: opacity .9s cubic-bezier(.21,.74,.22,1), transform .9s cubic-bezier(.21,.74,.22,1);
     }
     .reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
     }
-    .masonry-grid {
+    .masonry {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      grid-auto-rows: 72px;
-      gap: 1rem;
+      grid-auto-rows: 78px;
+      gap: 14px;
     }
-    .masonry-grid figure:nth-child(1) { grid-column: span 3; grid-row: span 5; }
-    .masonry-grid figure:nth-child(2) { grid-column: span 2; grid-row: span 3; }
-    .masonry-grid figure:nth-child(3) { grid-column: span 1; grid-row: span 4; }
-    .masonry-grid figure:nth-child(4) { grid-column: span 2; grid-row: span 4; }
-    .masonry-grid figure:nth-child(5) { grid-column: span 2; grid-row: span 3; }
-    .masonry-grid figure:nth-child(6) { grid-column: span 2; grid-row: span 4; }
+    .masonry figure:nth-child(1) { grid-column: span 3; grid-row: span 6; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 42px; }
+    .masonry figure:nth-child(3) { grid-column: span 1; grid-row: span 5; }
+    .masonry figure:nth-child(4) { grid-column: span 2; grid-row: span 4; }
+    .masonry figure:nth-child(5) { grid-column: span 2; grid-row: span 5; margin-top: -34px; }
+    .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      .masonry-grid {
+      body { background: linear-gradient(180deg, #fbf8f2 0%, #f7f1e8 54%, #fbf8f2 100%); }
+      .masonry {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-rows: 96px;
+        grid-auto-rows: 88px;
       }
-      .masonry-grid figure { grid-column: span 1 !important; grid-row: span 3 !important; }
-      .masonry-grid figure:nth-child(1),
-      .masonry-grid figure:nth-child(6) { grid-column: span 2 !important; }
+      .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
+      .masonry figure:nth-child(1),
+      .masonry figure:nth-child(5) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-clay selection:text-white">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/40 bg-shell/60 backdrop-blur-xl">
+<body class="font-sans antialiased selection:bg-rust selection:text-white">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/40 bg-paper/70 backdrop-blur-2xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="group flex items-center gap-3">
-        <span class="grid h-10 w-10 place-items-center rounded-full bg-ink text-sm font-black text-white">C</span>
+      <a href="#top" class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-lg bg-ink text-sm font-black text-paper">A</span>
         <span class="leading-none">
-          <span class="block text-sm font-black tracking-tight">CONTY</span>
-          <span class="block text-[10px] font-bold uppercase tracking-[.28em] text-ink/50">Hair Studio</span>
+          <span class="block text-sm font-black tracking-tight">ALEGRIA HAIR</span>
+          <span class="block text-[10px] font-bold uppercase tracking-[.24em] text-ink/50">Nabari Salon</span>
         </span>
       </a>
       <nav class="hidden items-center gap-8 text-xs font-bold uppercase tracking-[.18em] text-ink/60 md:flex">
@@ -88,57 +90,60 @@
         <a class="transition hover:text-ink" href="#gallery">Gallery</a>
         <a class="transition hover:text-ink" href="#access">Access</a>
       </nav>
-      <a href="tel:080-6207-6972" class="rounded-full bg-ink px-5 py-3 text-xs font-bold tracking-[.16em] text-white transition hover:bg-clay">RESERVE</a>
+      <a href="tel:0595-63-4488" class="rounded-lg bg-ink px-5 py-3 text-xs font-black tracking-[.16em] text-paper transition hover:bg-rust">RESERVE</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.08fr_.92fr] lg:py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 py-16 lg:grid-cols-[1.03fr_.97fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase tracking-[.34em] text-clay">Nabari / Kikyogaoka</p>
-          <h1 class="tight max-w-4xl text-[clamp(4.2rem,12vw,10.8rem)] font-black leading-[.78]">
-            髪に、<br>余白を。
+          <p class="mb-6 text-xs font-black uppercase tracking-[.34em] text-rust">Kounodai / Private Salon</p>
+          <h1 class="tight max-w-4xl text-[clamp(4.4rem,12vw,11rem)] font-black leading-[.77]">
+            髪は、<br>静かに<br>変わる。
           </h1>
-          <div class="mt-10 grid max-w-2xl gap-7 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
-            <p class="text-base leading-loose text-ink/72">
-              神戸から名張・桔梗が丘へ。髪を大切に扱い、くせ・艶・毎朝の扱いやすさまで整えるヘアスタジオ。
+          <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
+            <p class="body-copy text-[15px] text-ink/70">
+              名張市役所そば。北欧の空気感をまとった小さな空間で、髪と頭皮をいたわりながら、毎日扱いやすいデザインへ。
             </p>
-            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-full border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-white">Visit</a>
+            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-lg border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">Visit</a>
           </div>
         </div>
-        <div class="relative min-h-[560px]">
-          <img class="absolute right-0 top-6 h-[70%] w-[78%] rounded-[2rem] object-cover shadow-soft" src="https://picsum.photos/seed/conty-salon-main/900/1100" alt="CONTYのサロンイメージ">
-          <img class="absolute bottom-4 left-0 h-[42%] w-[52%] rounded-[1.4rem] border-8 border-shell object-cover shadow-soft" src="https://picsum.photos/seed/conty-hair-detail/760/680" alt="ヘアスタイルの仕上がりイメージ">
-          <div class="vertical-word absolute right-3 top-1/2 hidden -translate-y-1/2 text-[11px] font-black uppercase tracking-[.45em] text-white/85 mix-blend-difference lg:block">Quiet confidence</div>
+        <div class="relative min-h-[570px]">
+          <img class="absolute right-0 top-0 h-[72%] w-[78%] rounded-lg object-cover shadow-depth" src="https://picsum.photos/seed/alegria-hair-salon-main/920/1120" alt="ALEGRIA HAIRのサロンイメージ">
+          <img class="absolute bottom-4 left-0 h-[43%] w-[55%] rounded-lg border-8 border-paper object-cover shadow-depth" src="https://picsum.photos/seed/alegria-hair-style-close/760/680" alt="ヘアスタイルの仕上がりイメージ">
+          <div class="absolute bottom-24 right-8 hidden rounded-lg bg-paper/88 px-5 py-4 text-xs font-black uppercase tracking-[.26em] text-ink shadow-depth backdrop-blur md:block">since local beauty</div>
         </div>
       </div>
     </section>
 
     <section id="about" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.85fr_1.15fr]">
-        <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-sage">About</p>
-          <h2 class="tight text-5xl font-black leading-[.9] md:text-7xl">相談しやすい、<br>でも妥協しない。</h2>
+      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.86fr_1.14fr]">
+        <div class="lg:pt-14">
+          <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-moss">About</p>
+          <h2 class="tight text-5xl font-black leading-[.9] md:text-7xl">髪の素材を、<br>大切に扱う。</h2>
+          <p class="body-copy mt-8 max-w-md text-[15px] text-ink/66">
+            鴻之台、ハックベリーコート内にある隠れ家的プライベートサロン。落ち着いた店内で、相談から仕上げまで丁寧に向き合います。
+          </p>
         </div>
-        <div class="grid gap-8 md:grid-cols-2">
-          <div class="rounded-[1.4rem] bg-white/72 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black tracking-[.18em] text-clay">CONCEPT</p>
-            <p class="text-[15px] leading-loose text-ink/72">
-              2023年3月に先代から受け継がれたCONTY。丁寧なヒアリングを軸に、カット、カラー、縮毛矯正、ヘッドスパまで、髪質と暮らしに合わせて提案します。
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="rounded-lg bg-white/78 p-8 shadow-depth">
+            <p class="mb-6 text-sm font-black tracking-[.18em] text-rust">CARE</p>
+            <p class="body-copy text-[15px] text-ink/70">
+              炭酸泉発生装置を導入し、塩素除去や薬剤による残留アルカリのケアまで意識。頭皮と髪本来のコンディションを整えます。
             </p>
-          </div>
-          <div class="translate-y-10 rounded-[1.4rem] bg-ink p-8 text-white shadow-soft md:translate-y-16">
-            <p class="mb-6 text-sm font-black tracking-[.18em] text-sage">FOR YOU</p>
-            <ul class="space-y-4 text-[15px] leading-relaxed text-white/78">
-              <li>桔梗が丘駅から徒歩約6分</li>
-              <li>駐車場3台・全面禁煙</li>
-              <li>キッズ、メンズメニュー対応</li>
-              <li>QRコード決済・電子マネー対応</li>
+          </article>
+          <article class="translate-y-10 rounded-lg bg-ink p-8 text-paper shadow-depth md:translate-y-16">
+            <p class="mb-6 text-sm font-black tracking-[.18em] text-bone">STYLE</p>
+            <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
+              <li>カット・カラー・パーマ</li>
+              <li>髪質改善カラー</li>
+              <li>頭皮すっきり炭酸ケア</li>
+              <li>丁寧なカウンセリング</li>
             </ul>
-          </div>
+          </article>
           <div class="md:col-span-2 md:mt-12">
-            <img class="h-[360px] w-full rounded-[1.6rem] object-cover shadow-soft" src="https://picsum.photos/seed/conty-interior-light/1300/620" alt="日当たりのよい美容室のイメージ">
+            <img class="h-[360px] w-full rounded-lg object-cover shadow-depth" src="https://picsum.photos/seed/alegria-nordic-interior/1300/620" alt="北欧調の落ち着いた美容室イメージ">
           </div>
         </div>
       </div>
@@ -148,35 +153,35 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-clay">Reviews</p>
-            <h2 class="tight text-5xl font-black leading-none md:text-7xl">公開評価から見る<br>CONTY。</h2>
+            <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-rust">Reviews</p>
+            <h2 class="tight text-5xl font-black leading-none md:text-7xl">声が、次の<br>安心になる。</h2>
           </div>
-          <p class="max-w-md text-sm leading-loose text-ink/62">公開されている店舗掲載情報をもとに、評価・口コミ件数・写真件数をカード化しています。</p>
+          <p class="body-copy max-w-md text-sm text-ink/62">HOT PEPPER Beauty掲載の口コミ傾向を要約。サロン平均は4.79、口コミ75件の公開情報をもとにしています。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
-          <article class="rounded-[1.2rem] bg-white p-8 shadow-soft">
+          <article class="rounded-lg bg-white p-8 shadow-depth">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">Ekiten</span>
-              <span class="text-2xl font-black text-clay">3.34</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">2026.04</span>
+              <span class="text-2xl font-black text-rust">5.0</span>
             </div>
-            <p class="text-lg font-black tracking-tight">口コミ 1件 / 写真 31枚</p>
-            <p class="mt-5 text-sm leading-loose text-ink/64">「駐車場完備」「家族みんなで最高の髪型に」と紹介される店舗公式掲載。</p>
+            <p class="text-lg font-black tracking-tight">頭皮への配慮まで丁寧</p>
+            <p class="body-copy mt-5 text-sm text-ink/64">白髪染め時の頭皮不安に配慮し、しみにくく軽い仕上がりだったという声。</p>
           </article>
-          <article class="rounded-[1.2rem] bg-ink p-8 text-white shadow-soft md:translate-y-10">
+          <article class="rounded-lg bg-ink p-8 text-paper shadow-depth md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">Yahoo! Map</span>
-              <span class="text-2xl font-black text-white">36</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-bone">2026.03</span>
+              <span class="text-2xl font-black text-paper">5.0</span>
             </div>
-            <p class="text-lg font-black tracking-tight">写真 36件</p>
-            <p class="mt-5 text-sm leading-loose text-white/64">「美容室難民の方はこちらにお集まり下さい。」というメッセージで紹介。</p>
+            <p class="text-lg font-black tracking-tight">カウンセリングがわかりやすい</p>
+            <p class="body-copy mt-5 text-sm text-paper/64">希望に近い仕上がりと、自宅で無理なくできるスタイリング提案が好評。</p>
           </article>
-          <article class="rounded-[1.2rem] bg-white p-8 shadow-soft">
+          <article class="rounded-lg bg-white p-8 shadow-depth">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">Access</span>
-              <span class="text-2xl font-black text-clay">6min</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">2026.02</span>
+              <span class="text-2xl font-black text-rust">5.0</span>
             </div>
-            <p class="text-lg font-black tracking-tight">桔梗が丘駅から徒歩約6分</p>
-            <p class="mt-5 text-sm leading-loose text-ink/64">駅近ながら駐車場も利用可能。家族でも通いやすいロケーション。</p>
+            <p class="text-lg font-black tracking-tight">初めてでも相談しやすい</p>
+            <p class="body-copy mt-5 text-sm text-ink/64">髪の悩みに対する的確なアドバイスと、周囲からも好評な仕上がりへの評価。</p>
           </article>
         </div>
       </div>
@@ -184,63 +189,73 @@
 
     <section id="gallery" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <div class="mb-12 grid gap-8 md:grid-cols-[.8fr_1.2fr] md:items-end">
+        <div class="mb-12 grid gap-8 md:grid-cols-[.78fr_1.22fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-sage">Gallery</p>
-            <h2 class="tight text-5xl font-black leading-none md:text-7xl">余韻のある<br>仕上がり。</h2>
+            <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-moss">Gallery</p>
+            <h2 class="tight text-5xl font-black leading-none md:text-7xl">やわらかな<br>余韻を残す。</h2>
           </div>
-          <p class="max-w-xl text-[15px] leading-loose text-ink/66 md:justify-self-end">
-            公開ページ上で写真掲載が確認できるため、ここではプレビュー安定用のプレースホルダーで、サロン、ヘアスタイル、質感の方向性を表現しています。
+          <p class="body-copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
+            Googleマップ・HOT PEPPER Beauty・店舗紹介ページで写真掲載が確認できます。プレビュー環境では表示安定のため、プレースホルダー画像で空間と質感を表現しています。
           </p>
         </div>
-        <div class="masonry-grid">
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-01/900/1200" alt="サロンギャラリー1"></figure>
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-02/700/500" alt="サロンギャラリー2"></figure>
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-03/500/900" alt="サロンギャラリー3"></figure>
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-04/780/900" alt="サロンギャラリー4"></figure>
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-05/760/520" alt="サロンギャラリー5"></figure>
-          <figure class="overflow-hidden rounded-[1.6rem] bg-white shadow-soft"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/conty-gallery-06/820/980" alt="サロンギャラリー6"></figure>
+        <div class="masonry">
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-chair/900/1200" alt="サロンチェアのイメージ"></figure>
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-color/720/600" alt="カラー施術のイメージ"></figure>
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-tools/520/900" alt="美容道具のイメージ"></figure>
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-hair/780/900" alt="ヘアスタイルのイメージ"></figure>
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-light/860/980" alt="自然光の入る店内イメージ"></figure>
+          <figure class="overflow-hidden rounded-lg bg-white shadow-depth"><img class="h-full w-full object-cover transition duration-700 hover:scale-105" src="https://picsum.photos/seed/alegria-gallery-care/820/540" alt="ヘアケアのイメージ"></figure>
         </div>
       </div>
     </section>
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-stretch">
-        <div class="rounded-[1.6rem] bg-ink p-8 text-white shadow-soft md:p-12">
-          <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-sage">Access</p>
-          <h2 class="tight text-5xl font-black leading-none md:text-7xl">桔梗が丘で、<br>待っています。</h2>
+        <div class="rounded-lg bg-ink p-8 text-paper shadow-depth md:p-12">
+          <p class="mb-4 text-xs font-black uppercase tracking-[.3em] text-bone">Access</p>
+          <h2 class="tight text-5xl font-black leading-none md:text-7xl">市役所そば、<br>静かな一席へ。</h2>
           <dl class="mt-12 grid gap-7 text-sm">
             <div>
-              <dt class="mb-2 font-black tracking-[.18em] text-white/42">SALON</dt>
-              <dd class="text-lg font-black">CONTY［コンティ］ / ヘアスタジオ conty</dd>
+              <dt class="mb-2 font-black tracking-[.18em] text-paper/42">SALON</dt>
+              <dd class="text-lg font-black">ALEGRIA HAIR / アレグリア ヘア</dd>
             </div>
             <div>
-              <dt class="mb-2 font-black tracking-[.18em] text-white/42">ADDRESS</dt>
-              <dd class="leading-loose text-white/76">三重県名張市桔梗が丘3番町1街区64番地</dd>
+              <dt class="mb-2 font-black tracking-[.18em] text-paper/42">ADDRESS</dt>
+              <dd class="body-copy text-paper/76">三重県名張市鴻之台2番町54番地 ハックベリーコート内</dd>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black tracking-[.18em] text-white/42">TEL</dt>
-                <dd><a class="text-white/86 underline decoration-white/30 underline-offset-4" href="tel:080-6207-6972">080-6207-6972</a></dd>
+                <dt class="mb-2 font-black tracking-[.18em] text-paper/42">TEL</dt>
+                <dd><a class="text-paper/86 underline decoration-paper/30 underline-offset-4" href="tel:0595-63-4488">0595-63-4488</a></dd>
               </div>
               <div>
-                <dt class="mb-2 font-black tracking-[.18em] text-white/42">OPEN</dt>
-                <dd class="text-white/76">9:00-20:00 / 掲載情報により変動あり</dd>
+                <dt class="mb-2 font-black tracking-[.18em] text-paper/42">OPEN</dt>
+                <dd class="text-paper/76">火-土 10:00-19:00 / 日 10:00-18:00</dd>
+              </div>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+              <div>
+                <dt class="mb-2 font-black tracking-[.18em] text-paper/42">CLOSED</dt>
+                <dd class="text-paper/76">月曜・第1第3火曜</dd>
+              </div>
+              <div>
+                <dt class="mb-2 font-black tracking-[.18em] text-paper/42">PARKING</dt>
+                <dd class="text-paper/76">隣に2台スペースあり</dd>
               </div>
             </div>
             <div>
-              <dt class="mb-2 font-black tracking-[.18em] text-white/42">NOTE</dt>
-              <dd class="leading-loose text-white/76">第二火曜日、第三日曜日、祝日が月曜日の場合は休み。来店前の予約確認がおすすめです。</dd>
+              <dt class="mb-2 font-black tracking-[.18em] text-paper/42">ROUTE</dt>
+              <dd class="body-copy text-paper/76">名張市役所より徒歩1分。バス停「名張市役所」からすぐ。</dd>
             </div>
           </dl>
         </div>
-        <div class="min-h-[520px] overflow-hidden rounded-[1.6rem] bg-white shadow-soft">
+        <div class="min-h-[520px] overflow-hidden rounded-lg bg-white shadow-depth">
           <iframe
-            title="CONTY［コンティ］ Google Map"
+            title="ALEGRIA HAIR Google Map"
             class="h-full min-h-[520px] w-full"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=34.6426638,136.116798&hl=ja&z=16&output=embed"></iframe>
+            src="https://www.google.com/maps?q=34.626818,136.107021&hl=ja&z=17&output=embed"></iframe>
         </div>
       </div>
     </section>
@@ -248,8 +263,8 @@
 
   <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.22em] text-ink/46 md:flex-row">
-      <p>CONTY Hair Studio</p>
-      <p>Source: Google Maps / Yahoo! Map / Ekiten public listing</p>
+      <p>ALEGRIA HAIR</p>
+      <p>Source: Google Maps / HOT PEPPER Beauty / HANZOU Magazine</p>
     </div>
   </footer>
 
@@ -261,7 +276,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.16 });
+    }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
 
     document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
   </script>
