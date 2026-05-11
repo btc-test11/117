@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ハセガワベーカリー | 名張・つつじが丘のパン屋</title>
-  <meta name="description" content="三重県名張市つつじが丘北のハセガワベーカリー。朝7:30から焼きたてのパンと、季節のシュトーレンを届ける地域のベーカリー。" />
+  <title>御菓子司 星安 | 名張・上八町の和洋菓子</title>
+  <meta name="description" content="三重県名張市上八町の御菓子司 星安。看板銘菓「寳玉」をはじめ、和菓子と洋菓子がそろう名張駅徒歩圏のお菓子店。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,20 +12,20 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Bricolage Grotesque"', '"Noto Sans JP"', 'system-ui', 'sans-serif']
+            display: ['"Zen Old Mincho"', '"Noto Sans JP"', 'serif']
           },
           colors: {
-            ink: '#181614',
-            paper: '#fff8ec',
-            wheat: '#ead8b7',
-            butter: '#f5c766',
-            brick: '#9b4e2d',
-            leaf: '#5d7562',
-            night: '#251d17'
+            sumi: '#15120f',
+            kinari: '#fffaf0',
+            azuki: '#7d2330',
+            matcha: '#5f6f43',
+            gold: '#c79a3d',
+            usu: '#eadcc3',
+            stone: '#f4eee2'
           },
           boxShadow: {
-            soft: '0 28px 90px rgba(37,29,23,.14)',
-            crisp: '0 16px 42px rgba(155,78,45,.18)'
+            soft: '0 28px 90px rgba(21,18,15,.13)',
+            lift: '0 18px 50px rgba(125,35,48,.18)'
           }
         }
       }
@@ -33,26 +33,26 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
-      color: #181614;
+      color: #15120f;
       background:
-        linear-gradient(108deg, rgba(234,216,183,.82) 0 31%, transparent 31% 100%),
-        radial-gradient(circle at 78% 15%, rgba(245,199,102,.28), transparent 24%),
-        linear-gradient(180deg, #fff8ec 0%, #f3e7d2 52%, #fff8ec 100%);
+        linear-gradient(104deg, rgba(234,220,195,.78) 0 28%, transparent 28% 100%),
+        radial-gradient(circle at 82% 18%, rgba(199,154,61,.20), transparent 28%),
+        linear-gradient(180deg, #fffaf0 0%, #f4eee2 52%, #fffaf0 100%);
     }
-    .tight { letter-spacing: -.075em; }
+    .tight { letter-spacing: -.08em; }
     .wide { letter-spacing: .24em; }
     .copy { line-height: 2.05; }
     .reveal {
       opacity: 0;
-      transform: translateY(42px);
+      transform: translateY(44px);
       transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
     }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
-    .cut-text {
+    .vertical-note {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       letter-spacing: .18em;
@@ -60,41 +60,41 @@
     .masonry {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      grid-auto-rows: 78px;
+      grid-auto-rows: 76px;
       gap: 14px;
     }
-    .masonry figure:nth-child(1) { grid-column: span 3; grid-row: span 6; }
+    .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 6; }
     .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 42px; }
-    .masonry figure:nth-child(3) { grid-column: span 1; grid-row: span 5; }
-    .masonry figure:nth-child(4) { grid-column: span 2; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 2; grid-row: span 5; margin-top: -34px; }
+    .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 5; }
+    .masonry figure:nth-child(4) { grid-column: span 3; grid-row: span 4; }
+    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -28px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #fff8ec 0%, #f3e7d2 58%, #fff8ec 100%); }
-      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 88px; }
+      body { background: linear-gradient(180deg, #fffaf0 0%, #f4eee2 58%, #fffaf0 100%); }
+      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 92px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
-      .masonry figure:nth-child(5) { grid-column: span 2 !important; }
+      .masonry figure:nth-child(4) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-brick selection:text-white">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/55 bg-paper/68 backdrop-blur-2xl">
+<body class="font-sans antialiased selection:bg-azuki selection:text-white">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-kinari/68 backdrop-blur-2xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="ハセガワベーカリー ホーム">
-        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-ink font-display text-xl font-black text-paper shadow-crisp">H</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="御菓子司 星安 ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-sumi font-display text-xl font-black text-kinari shadow-lift">星</span>
         <span class="leading-none">
-          <span class="block text-lg font-black tracking-[-.06em]">ハセガワベーカリー</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/42">tsutsujigaoka</span>
+          <span class="block text-lg font-black tracking-[-.06em]">御菓子司 星安</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-sumi/42">nabari sweets</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-ink/55 md:flex">
-        <a class="transition hover:text-ink" href="#about">About</a>
-        <a class="transition hover:text-ink" href="#voice">Voice</a>
-        <a class="transition hover:text-ink" href="#gallery">Gallery</a>
-        <a class="transition hover:text-ink" href="#access">Access</a>
+      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-sumi/55 md:flex">
+        <a class="transition hover:text-sumi" href="#about">About</a>
+        <a class="transition hover:text-sumi" href="#voice">Voice</a>
+        <a class="transition hover:text-sumi" href="#gallery">Gallery</a>
+        <a class="transition hover:text-sumi" href="#access">Access</a>
       </nav>
-      <a href="#access" class="rounded-[8px] bg-ink px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-brick">Map</a>
+      <a href="#access" class="rounded-[8px] bg-sumi px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-kinari transition hover:bg-azuki">Map</a>
     </div>
   </header>
 
@@ -102,25 +102,25 @@
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
       <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-brick">Hasegawa Bakery / Nabari</p>
-          <h1 class="tight font-display text-[clamp(4.4rem,12vw,11.5rem)] font-black leading-[.78]">
-            Bread<br>runs out.
+          <p class="mb-6 text-xs font-black uppercase wide text-azuki">Hoshiyasu / Kamihatcho</p>
+          <h1 class="tight font-display text-[clamp(3.6rem,7.8vw,7.6rem)] font-black leading-[.93]">
+            甘い記憶を、<br>名張から。
           </h1>
-          <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
-            <p class="copy text-[15px] text-ink/66">
-              欲しいパンは、朝のうちに。つつじが丘の商店街で、毎日を少し楽しみに変える焼きたてと出会う。
+          <div class="mt-10 grid max-w-2xl gap-6 border-l border-sumi/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
+            <p class="copy text-[15px] text-sumi/66">
+              看板銘菓「寳玉」からロールケーキ、マドレーヌまで。和と洋が並ぶ一軒で、今日の手みやげが決まる。
             </p>
-            <a href="#gallery" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">See bread</a>
+            <a href="#gallery" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-sumi px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-sumi hover:text-kinari">See sweets</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <img class="absolute right-0 top-0 h-[72%] w-[82%] rounded-[8px] object-cover shadow-soft" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1120&q=85" alt="焼きたてパンが並ぶベーカリーのイメージ">
-          <img class="absolute bottom-5 left-0 h-[42%] w-[55%] rounded-[8px] border-8 border-paper object-cover shadow-soft" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=780&q=85" alt="パンを持ち帰る朝のイメージ">
-          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-paper/90 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-black tracking-[-.04em]">7:30</p>
-            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">open</p>
+          <img class="absolute right-0 top-0 h-[72%] w-[82%] rounded-[8px] object-cover shadow-soft" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1120&q=85" alt="和洋菓子が並ぶ店頭のイメージ">
+          <img class="absolute bottom-5 left-0 h-[42%] w-[55%] rounded-[8px] border-8 border-kinari object-cover shadow-soft" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=780&q=85" alt="菓子折りのイメージ">
+          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-kinari/90 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
+            <p class="font-display text-4xl font-black tracking-[-.04em]">寳玉</p>
+            <p class="text-[10px] font-black uppercase tracking-[.28em] text-sumi/46">signature</p>
           </div>
-          <p class="cut-text absolute left-2 top-12 hidden text-xs font-black uppercase text-ink/35 lg:block">fresh from tsutsujigaoka</p>
+          <p class="vertical-note absolute left-2 top-12 hidden text-xs font-black uppercase text-sumi/35 lg:block">wagashi and gateaux</p>
         </div>
       </div>
     </section>
@@ -128,33 +128,33 @@
     <section id="about" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.82fr_1.18fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-leaf">About</p>
-          <h2 class="tight font-display text-5xl font-black leading-[.93] md:text-7xl">山の上の、<br>本気のパン。</h2>
-          <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
-            名張市つつじが丘北の住宅街にあるベーカリー。食べログでは、丁寧なパンづくり、コストパフォーマンス、季節限定のシュトーレンへ支持が集まっています。
+          <p class="mb-4 text-xs font-black uppercase wide text-matcha">About</p>
+          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">名張の名産を、<br>美しく包む。</h2>
+          <p class="copy mt-8 max-w-md text-[15px] text-sumi/64">
+            名張市上八町の御菓子司 星安。観光協会では、こだわりの和洋菓子がそろう店として紹介されています。最中に餅を包んだ「寳玉」は、幅広い世代に親しまれる看板商品です。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
           <article class="rounded-[8px] bg-white/84 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-brick">Morning</p>
-            <p class="copy text-[15px] text-ink/68">
-              7:30開店。食パン、デニッシュ、菓子パン、惣菜パンまで、朝の選択肢を広げるラインアップ。
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-azuki">Selection</p>
+            <p class="copy text-[15px] text-sumi/68">
+              和菓子、洋菓子、ロールケーキ、マドレーヌ。家用にも贈答にも選びやすい品ぞろえ。
             </p>
           </article>
-          <article class="translate-y-10 rounded-[8px] bg-night p-8 text-paper shadow-soft md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-wheat">Seasonal</p>
-            <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
-              <li>本格シュトーレン</li>
-              <li>クロワッサンブレッド</li>
-              <li>苺サンド</li>
-              <li>メロンパン・デニッシュ</li>
+          <article class="translate-y-10 rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-gold">Benefit</p>
+            <ul class="space-y-4 text-[15px] leading-relaxed text-kinari/76">
+              <li>名張駅から徒歩圏</li>
+              <li>駐車場あり</li>
+              <li>テイクアウト利用</li>
+              <li>手みやげに映える菓子</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-[8px] bg-wheat shadow-soft md:col-span-2 md:mt-12">
-            <img class="h-[380px] w-full object-cover opacity-95" src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1320&q=85" alt="パンが並ぶ棚のイメージ">
-            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-paper/88 p-5 shadow-crisp backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-brick">Benefit</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">早起きの理由を、ひとつ増やす。</p>
+          <div class="relative overflow-hidden rounded-[8px] bg-usu shadow-soft md:col-span-2 md:mt-12">
+            <img class="h-[380px] w-full object-cover opacity-95" src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1320&q=85" alt="菓子店のディスプレイのイメージ">
+            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-kinari/88 p-5 shadow-lift backdrop-blur">
+              <p class="text-xs font-black uppercase wide text-azuki">Awarded</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">寳玉は菓子博栄誉賞を受賞。</p>
             </div>
           </div>
         </div>
@@ -165,35 +165,35 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-brick">Reviews</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">また、<br>予約したくなる。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-azuki">Reviews</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">迷わず、<br>買える。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-ink/62">食べログ掲載レビューをもとに、来店前に伝わる価値へ要約しています。</p>
+          <p class="copy max-w-md text-sm text-sumi/62">食べログ・エキテンの公開レビューをもとに、来店前に伝わる価値へ要約しています。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
           <article class="rounded-[8px] bg-white p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">Tabelog</span>
-              <span class="font-display text-4xl font-black text-brick">4.8</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-matcha">Tabelog</span>
+              <span class="font-display text-4xl font-black text-azuki">6</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">名張で本格的なシュトーレン</p>
-            <p class="copy mt-5 text-sm text-ink/64">毎年恒例のシュトーレンを予約する声。季節を待つ楽しみがある、地域に根づいた一品です。</p>
+            <p class="text-lg font-black tracking-[-.04em]">品数が豊富</p>
+            <p class="copy mt-5 text-sm text-sumi/64">和菓子・洋菓子がそろい、名張市内の地名を冠したマドレーヌも楽しめるという声。</p>
           </article>
-          <article class="rounded-[8px] bg-night p-8 text-paper shadow-soft md:translate-y-10">
+          <article class="rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-wheat">Tabelog</span>
-              <span class="font-display text-4xl font-black text-paper">AM</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-gold">Ekiten</span>
+              <span class="font-display text-4xl font-black text-kinari">3.5</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">欲しいパンはすぐ売り切れ</p>
-            <p class="copy mt-5 text-sm text-paper/66">開店時間に向かいたくなる、というレビュー。選ぶ楽しみを逃さないなら、早めの来店がおすすめです。</p>
+            <p class="text-lg font-black tracking-[-.04em]">伊賀ロールをぜひ</p>
+            <p class="copy mt-5 text-sm text-kinari/66">ふんわり生地にクリームがたっぷり入ったロールケーキが好評。駐車場の使いやすさにも触れられています。</p>
           </article>
           <article class="rounded-[8px] bg-white p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">Tabelog</span>
-              <span class="font-display text-4xl font-black text-brick">CP</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-matcha">Local</span>
+              <span class="font-display text-4xl font-black text-azuki">寳</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">丁寧で、コスパもいい</p>
-            <p class="copy mt-5 text-sm text-ink/64">「真剣、丁寧、コスパ最強」と評されるパン。日常の買い物に、確かな満足感を持ち帰れます。</p>
+            <p class="text-lg font-black tracking-[-.04em]">看板商品がある安心</p>
+            <p class="copy mt-5 text-sm text-sumi/64">餅をやわらかな粒あんで包む「寳玉」。世代を問わず選べる、星安らしい手みやげです。</p>
           </article>
         </div>
       </div>
@@ -203,37 +203,37 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[.78fr_1.22fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-leaf">Gallery</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">焼き色で、<br>選ぶ。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-matcha">Gallery</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">ひと箱で、<br>華やぐ。</h2>
           </div>
-          <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            ギャラリーは食べログ投稿写真のURLを使用。読み込めない環境では、安定したプレースホルダーへ切り替えます。
+          <p class="copy max-w-xl text-[15px] text-sumi/66 md:justify-self-end">
+            ギャラリーは食べログ投稿写真のURLを使用。読み込めない場合は、安定したプレースホルダーへ切り替えます。
           </p>
         </div>
         <div class="masonry">
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/140944/df51f3c48a1fcb407d646c37ce994abb.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-hard/900/1200';" alt="ハセガワベーカリーのハード系パン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">ハード系パン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/221024/640x640_rect_77b49f7f701bb69044e9830d6d7f951d.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-ho/900/1200';" alt="星安の菓子詰め合わせ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">焼き菓子と寳玉 / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/275263/640x640_rect_90f39e38dd6ba157cb1dae07796f26d6.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-stollen/720/620';" alt="ハセガワベーカリーのシュトーレン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">シュトーレン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/115847/640x640_rect_115847070.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-castella/760/620';" alt="星安のベビーカステラ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ベビーカステラ / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/223744/640x640_rect_2782eaeda956a9154c0f24e977ecbc1d.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-croissant/520/900';" alt="ハセガワベーカリーのクロワッサンブレッド">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">クロワッサンブレッド / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8708/8708244.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-cake/720/900';" alt="星安のケーキ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ケーキセット / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/223744/640x640_rect_75eb6bd2389dde9eaba7fb4ba539e65b.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-cupcake/760/860';" alt="ハセガワベーカリーのチョコレートカップケーキ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">カップケーキ / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8246/8246593.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-roll/900/620';" alt="星安のロールケーキ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ロールケーキ / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/61167/61167272.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-sandwich/860/980';" alt="ハセガワベーカリーの苺サンド">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">苺サンド / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8246/8246595.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-shortcake/620/960';" alt="星安のショートケーキ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ショートケーキ / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/85270/85270398.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-melon/820/540';" alt="ハセガワベーカリーのメロンパン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">メロンパン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/255944/640x640_rect_89fcac28782c9bc3140494512457bc9b.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-wagashi/820/540';" alt="星安の和菓子">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">乙女心 / 食べログ投稿写真</figcaption>
           </figure>
         </div>
       </div>
@@ -241,60 +241,56 @@
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-stretch">
-        <div class="rounded-[8px] bg-night p-8 text-paper shadow-soft md:p-12">
-          <p class="mb-4 text-xs font-black uppercase wide text-wheat">Access</p>
-          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">つつじが丘の、<br>朝へ。</h2>
+        <div class="rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:p-12">
+          <p class="mb-4 text-xs font-black uppercase wide text-gold">Access</p>
+          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">名張駅から、<br>歩いて一服。</h2>
           <dl class="mt-12 grid gap-7 text-sm">
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Shop</dt>
-              <dd class="text-lg font-black">ハセガワベーカリー（Hasegawa Bakery）</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Shop</dt>
+              <dd class="text-lg font-black">御菓子司 星安 / Gateaux HOSHIYASU</dd>
             </div>
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Address</dt>
-              <dd class="copy text-paper/76">〒518-0432 三重県名張市つつじが丘北3-3-8</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Address</dt>
+              <dd class="copy text-kinari/76">〒518-0711 三重県名張市上八町1486-10</dd>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Tel</dt>
-                <dd><a class="text-paper/88 underline decoration-paper/30 underline-offset-4" href="tel:0595-44-6527">0595-44-6527</a></dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Tel</dt>
+                <dd><a class="text-kinari/88 underline decoration-kinari/30 underline-offset-4" href="tel:0595-63-5050">0595-63-5050</a></dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Open</dt>
-                <dd class="text-paper/76">月・木・金・土・日 7:30-18:00</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Hours</dt>
+                <dd class="text-kinari/76">9:00 - 19:00</dd>
               </div>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Closed</dt>
-                <dd class="text-paper/76">火曜日・水曜日</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Closed</dt>
+                <dd class="text-kinari/76">1月1日 - 3日</dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Parking</dt>
-                <dd class="text-paper/76">向かいに商店街共同駐車場あり</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Parking</dt>
+                <dd class="text-kinari/76">10台</dd>
               </div>
-            </div>
-            <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Note</dt>
-              <dd class="copy text-paper/76">売り切れ次第終了。営業時間・定休日は変更される場合があります。</dd>
             </div>
           </dl>
         </div>
-        <div class="min-h-[520px] overflow-hidden rounded-[8px] bg-white shadow-soft">
+        <div class="min-h-[560px] overflow-hidden rounded-[8px] bg-white shadow-soft">
           <iframe
-            title="ハセガワベーカリー Google Map"
-            class="h-full min-h-[520px] w-full"
+            title="御菓子司 星安 Google Map"
+            class="h-full min-h-[560px] w-full"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=34.6073969,136.1320622&hl=ja&z=17&output=embed"></iframe>
+            src="https://www.google.com/maps?q=%E5%BE%A1%E8%8F%93%E5%AD%90%E5%8F%B8%20%E6%98%9F%E5%AE%89%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E4%B8%8A%E5%85%AB%E7%94%BA1486-10&output=embed"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
-      <p>Hasegawa Bakery / Nabari</p>
-      <p>© 2026 Landing Preview</p>
+  <footer class="border-t border-sumi/10 px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-sumi/45 md:flex-row">
+      <p>御菓子司 星安</p>
+      <p>Source: 名張市観光協会 / 食べログ / エキテン</p>
     </div>
   </footer>
 
@@ -306,9 +302,9 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0.16, rootMargin: '0px 0px -80px 0px' });
 
-    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+    document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
   </script>
 </body>
 </html>
