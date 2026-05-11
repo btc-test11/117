@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>honoka. | 名張・百合が丘のパン店</title>
-  <meta name="description" content="三重県名張市百合が丘東のパン店 honoka.。朝の食卓に寄り添うパンドミ、惣菜パン、スコーン、焼きたての香りを届ける小さなベーカリー。" />
+  <title>ハセガワベーカリー | 名張・つつじが丘のパン屋</title>
+  <meta name="description" content="三重県名張市つつじが丘北のハセガワベーカリー。朝7:30から焼きたてのパンと、季節のシュトーレンを届ける地域のベーカリー。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,20 +12,20 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Oswald"', '"Noto Sans JP"', 'sans-serif']
+            display: ['"Bricolage Grotesque"', '"Noto Sans JP"', 'system-ui', 'sans-serif']
           },
           colors: {
-            ink: '#171513',
-            milk: '#fffaf0',
-            flour: '#f5ebd8',
-            crust: '#b8682f',
-            rye: '#6f563b',
-            sage: '#6d7d66',
-            cocoa: '#2c2119'
+            ink: '#181614',
+            paper: '#fff8ec',
+            wheat: '#ead8b7',
+            butter: '#f5c766',
+            brick: '#9b4e2d',
+            leaf: '#5d7562',
+            night: '#251d17'
           },
           boxShadow: {
-            soft: '0 30px 90px rgba(44,33,25,.16)',
-            lift: '0 18px 54px rgba(184,104,47,.18)'
+            soft: '0 28px 90px rgba(37,29,23,.14)',
+            crisp: '0 16px 42px rgba(155,78,45,.18)'
           }
         }
       }
@@ -33,68 +33,59 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
+      color: #181614;
       background:
-        linear-gradient(116deg, rgba(245,235,216,.92) 0 36%, transparent 36% 100%),
-        radial-gradient(circle at 86% 18%, rgba(184,104,47,.18), transparent 26%),
-        linear-gradient(180deg, #fffaf0 0%, #f7efe1 48%, #fffaf0 100%);
-      color: #171513;
+        linear-gradient(108deg, rgba(234,216,183,.82) 0 31%, transparent 31% 100%),
+        radial-gradient(circle at 78% 15%, rgba(245,199,102,.28), transparent 24%),
+        linear-gradient(180deg, #fff8ec 0%, #f3e7d2 52%, #fff8ec 100%);
     }
-    .tight { letter-spacing: -.07em; }
-    .wide { letter-spacing: .22em; }
+    .tight { letter-spacing: -.075em; }
+    .wide { letter-spacing: .24em; }
     .copy { line-height: 2.05; }
-    .grain::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      opacity: .18;
-      background-image: url("https://picsum.photos/seed/honoka-grain/1400/900");
-      background-size: cover;
-      mix-blend-mode: multiply;
-      filter: grayscale(1) contrast(1.4);
-    }
     .reveal {
       opacity: 0;
-      transform: translateY(44px);
-      transition: opacity .9s cubic-bezier(.19,.72,.22,1), transform .9s cubic-bezier(.19,.72,.22,1);
+      transform: translateY(42px);
+      transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
     }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .cut-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: .18em;
+    }
     .masonry {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      grid-auto-rows: 76px;
+      grid-auto-rows: 78px;
       gap: 14px;
     }
     .masonry figure:nth-child(1) { grid-column: span 3; grid-row: span 6; }
-    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 46px; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 42px; }
     .masonry figure:nth-child(3) { grid-column: span 1; grid-row: span 5; }
     .masonry figure:nth-child(4) { grid-column: span 2; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 2; grid-row: span 5; margin-top: -32px; }
+    .masonry figure:nth-child(5) { grid-column: span 2; grid-row: span 5; margin-top: -34px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #fffaf0 0%, #f7efe1 55%, #fffaf0 100%); }
-      .masonry {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-rows: 86px;
-      }
+      body { background: linear-gradient(180deg, #fff8ec 0%, #f3e7d2 58%, #fff8ec 100%); }
+      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 88px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
       .masonry figure:nth-child(5) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-crust selection:text-white">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/55 bg-milk/70 backdrop-blur-2xl">
+<body class="font-sans antialiased selection:bg-brick selection:text-white">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/55 bg-paper/68 backdrop-blur-2xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3">
-        <span class="grid h-11 w-11 place-items-center rounded-[6px] bg-ink font-display text-xl font-bold text-milk shadow-lift">h</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="ハセガワベーカリー ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-ink font-display text-xl font-black text-paper shadow-crisp">H</span>
         <span class="leading-none">
-          <span class="block font-display text-xl font-bold tracking-[-.04em]">honoka.</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/45">bakery nabari</span>
+          <span class="block text-lg font-black tracking-[-.06em]">ハセガワベーカリー</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/42">tsutsujigaoka</span>
         </span>
       </a>
       <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-ink/55 md:flex">
@@ -103,32 +94,33 @@
         <a class="transition hover:text-ink" href="#gallery">Gallery</a>
         <a class="transition hover:text-ink" href="#access">Access</a>
       </nav>
-      <a href="#access" class="rounded-[6px] bg-ink px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-milk transition hover:bg-crust">Map</a>
+      <a href="#access" class="rounded-[8px] bg-ink px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-brick">Map</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-crust">Yurigaoka / Nabari</p>
-          <h1 class="tight font-display text-[clamp(4.9rem,13vw,12rem)] font-bold leading-[.78]">
-            Morning<br>has a scent.
+          <p class="mb-6 text-xs font-black uppercase wide text-brick">Hasegawa Bakery / Nabari</p>
+          <h1 class="tight font-display text-[clamp(4.4rem,12vw,11.5rem)] font-black leading-[.78]">
+            Bread<br>runs out.
           </h1>
           <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
             <p class="copy text-[15px] text-ink/66">
-              百合が丘の坂道に、焼きたての香り。もっちりしたパンドミから、惣菜パン、スコーン、ハード系まで、毎日の朝を少し上質に変える小さなパン店です。
+              欲しいパンは、朝のうちに。つつじが丘の商店街で、毎日を少し楽しみに変える焼きたてと出会う。
             </p>
-            <a href="#gallery" class="inline-flex h-14 items-center justify-center rounded-[6px] border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-milk">See bread</a>
+            <a href="#gallery" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">See bread</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <img class="absolute right-0 top-0 h-[72%] w-[80%] rounded-[8px] object-cover shadow-soft" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=980&q=80" alt="朝のベーカリーを想起させるパン">
-          <img class="absolute bottom-4 left-0 h-[42%] w-[56%] rounded-[8px] border-8 border-milk object-cover shadow-soft" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=760&q=80" alt="焼きたてパンのイメージ">
-          <div class="absolute bottom-24 right-6 hidden rounded-[6px] bg-milk/92 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-bold tracking-[-.04em]">7:30</p>
-            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">open morning</p>
+          <img class="absolute right-0 top-0 h-[72%] w-[82%] rounded-[8px] object-cover shadow-soft" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1120&q=85" alt="焼きたてパンが並ぶベーカリーのイメージ">
+          <img class="absolute bottom-5 left-0 h-[42%] w-[55%] rounded-[8px] border-8 border-paper object-cover shadow-soft" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=780&q=85" alt="パンを持ち帰る朝のイメージ">
+          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-paper/90 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
+            <p class="font-display text-4xl font-black tracking-[-.04em]">7:30</p>
+            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">open</p>
           </div>
+          <p class="cut-text absolute left-2 top-12 hidden text-xs font-black uppercase text-ink/35 lg:block">fresh from tsutsujigaoka</p>
         </div>
       </div>
     </section>
@@ -136,35 +128,33 @@
     <section id="about" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.82fr_1.18fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-sage">About</p>
-          <h2 class="tight font-display text-5xl font-bold leading-[.93] md:text-7xl">食卓に、<br>余白を焼く。</h2>
+          <p class="mb-4 text-xs font-black uppercase wide text-leaf">About</p>
+          <h2 class="tight font-display text-5xl font-black leading-[.93] md:text-7xl">山の上の、<br>本気のパン。</h2>
           <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
-            地域メディアでは、ひとつひとつ手作業で笑顔になれるパンを作る店として紹介。食べログでは、名張市百合が丘東の人気パン店として、パンドミや惣菜パン、ソフト系、スコーンなど幅広いラインアップへの声が集まっています。
+            名張市つつじが丘北の住宅街にあるベーカリー。食べログでは、丁寧なパンづくり、コストパフォーマンス、季節限定のシュトーレンへ支持が集まっています。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded-[8px] bg-white/82 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-crust">Daily</p>
+          <article class="rounded-[8px] bg-white/84 p-8 shadow-soft">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-brick">Morning</p>
             <p class="copy text-[15px] text-ink/68">
-              朝の7時台から開く、日常使いのベーカリー。翌朝の食パン、昼の惣菜パン、家族への手土産まで、暮らしの導線に自然に入ります。
+              7:30開店。食パン、デニッシュ、菓子パン、惣菜パンまで、朝の選択肢を広げるラインアップ。
             </p>
           </article>
-          <article class="translate-y-10 rounded-[8px] bg-cocoa p-8 text-milk shadow-soft md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-flour">Lineup</p>
-            <ul class="space-y-4 text-[15px] leading-relaxed text-milk/76">
-              <li>パンドミ・食パン</li>
-              <li>くるみ蜂蜜チーズ</li>
-              <li>焼きカレーパン</li>
-              <li>スコーン・ベーグル・ハード系</li>
+          <article class="translate-y-10 rounded-[8px] bg-night p-8 text-paper shadow-soft md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-wheat">Seasonal</p>
+            <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
+              <li>本格シュトーレン</li>
+              <li>クロワッサンブレッド</li>
+              <li>苺サンド</li>
+              <li>メロンパン・デニッシュ</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-[8px] bg-flour shadow-soft md:col-span-2 md:mt-12">
-            <div class="grain relative h-[380px]">
-              <img class="h-full w-full object-cover opacity-90" src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1320&q=80" alt="パンが並ぶテーブルのイメージ">
-            </div>
-            <div class="absolute bottom-6 left-6 max-w-xs rounded-[6px] bg-milk/88 p-5 shadow-lift backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-crust">Benefit</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">朝食の満足度を、買って帰れる。</p>
+          <div class="relative overflow-hidden rounded-[8px] bg-wheat shadow-soft md:col-span-2 md:mt-12">
+            <img class="h-[380px] w-full object-cover opacity-95" src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1320&q=85" alt="パンが並ぶ棚のイメージ">
+            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-paper/88 p-5 shadow-crisp backdrop-blur">
+              <p class="text-xs font-black uppercase wide text-brick">Benefit</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">早起きの理由を、ひとつ増やす。</p>
             </div>
           </div>
         </div>
@@ -175,35 +165,35 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-crust">Reviews</p>
-            <h2 class="tight font-display text-5xl font-bold leading-none md:text-7xl">帰り道に、<br>もう一つ。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-brick">Reviews</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">また、<br>予約したくなる。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-ink/62">公開レビューを要約し、来店前に伝わる価値へ翻訳しています。</p>
+          <p class="copy max-w-md text-sm text-ink/62">食べログ掲載レビューをもとに、来店前に伝わる価値へ要約しています。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
           <article class="rounded-[8px] bg-white p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">Tabelog</span>
-              <span class="font-display text-4xl font-bold text-crust">20</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">Tabelog</span>
+              <span class="font-display text-4xl font-black text-brick">4.8</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">種類が多く、普段使いしやすい</p>
-            <p class="copy mt-5 text-sm text-ink/64">店内は小さめながら、惣菜パン、ソフト系、食パン、スコーンなどが並ぶという声。家族で食べやすいパンを選びたい日に向きます。</p>
+            <p class="text-lg font-black tracking-[-.04em]">名張で本格的なシュトーレン</p>
+            <p class="copy mt-5 text-sm text-ink/64">毎年恒例のシュトーレンを予約する声。季節を待つ楽しみがある、地域に根づいた一品です。</p>
           </article>
-          <article class="rounded-[8px] bg-cocoa p-8 text-milk shadow-soft md:translate-y-10">
+          <article class="rounded-[8px] bg-night p-8 text-paper shadow-soft md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-flour">Tabelog</span>
-              <span class="font-display text-4xl font-bold text-milk">386</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-wheat">Tabelog</span>
+              <span class="font-display text-4xl font-black text-paper">AM</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">昼でも客足が途切れない</p>
-            <p class="copy mt-5 text-sm text-milk/66">平日昼に次々と来店があった、というレビュー。地域で支持されるパン店として、早めの時間に訪れる価値があります。</p>
+            <p class="text-lg font-black tracking-[-.04em]">欲しいパンはすぐ売り切れ</p>
+            <p class="copy mt-5 text-sm text-paper/66">開店時間に向かいたくなる、というレビュー。選ぶ楽しみを逃さないなら、早めの来店がおすすめです。</p>
           </article>
           <article class="rounded-[8px] bg-white p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">Voice</span>
-              <span class="font-display text-4xl font-bold text-crust">AM</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">Tabelog</span>
+              <span class="font-display text-4xl font-black text-brick">CP</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">明日のパンを買いに寄れる</p>
-            <p class="copy mt-5 text-sm text-ink/64">「明日のパン」を目的に立ち寄ったという口コミも。日々の食卓へ持ち帰るベーカリーとしての使いやすさが伝わります。</p>
+            <p class="text-lg font-black tracking-[-.04em]">丁寧で、コスパもいい</p>
+            <p class="copy mt-5 text-sm text-ink/64">「真剣、丁寧、コスパ最強」と評されるパン。日常の買い物に、確かな満足感を持ち帰れます。</p>
           </article>
         </div>
       </div>
@@ -211,39 +201,39 @@
 
     <section id="gallery" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <div class="mb-12 grid gap-8 md:grid-cols-[.8fr_1.2fr] md:items-end">
+        <div class="mb-12 grid gap-8 md:grid-cols-[.78fr_1.22fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-sage">Gallery</p>
-            <h2 class="tight font-display text-5xl font-bold leading-none md:text-7xl">焼き色の、<br>記憶。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-leaf">Gallery</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">焼き色で、<br>選ぶ。</h2>
           </div>
           <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            ギャラリーのみ食べログ掲載の実写真URLを使用。表示できない場合は、安定したプレースホルダーへ自動で切り替えます。
+            ギャラリーは食べログ投稿写真のURLを使用。読み込めない環境では、安定したプレースホルダーへ切り替えます。
           </p>
         </div>
         <div class="masonry">
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/17550/17550809.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-shop/900/1200';" alt="honoka. 店内に並ぶパン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">店内のパン棚 / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/140944/df51f3c48a1fcb407d646c37ce994abb.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-hard/900/1200';" alt="ハセガワベーカリーのハード系パン">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">ハード系パン / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/203218/640x640_rect_a92de3950b1c4135ea1a84bf13a937ff.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-croissant/720/620';" alt="honoka. クロワッサン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">クロワッサン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/275263/640x640_rect_90f39e38dd6ba157cb1dae07796f26d6.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-stollen/720/620';" alt="ハセガワベーカリーのシュトーレン">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">シュトーレン / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/203218/640x640_rect_80ca644e16eea5829d568fb8a9d9ce88.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-green-bagel/520/900';" alt="honoka. 緑色のベーグル">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">ベーグル / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/223744/640x640_rect_2782eaeda956a9154c0f24e977ecbc1d.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-croissant/520/900';" alt="ハセガワベーカリーのクロワッサンブレッド">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">クロワッサンブレッド / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/42358/640x640_rect_42358232.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-front/760/860';" alt="honoka. 店舗外観">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">店舗外観 / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/223744/640x640_rect_75eb6bd2389dde9eaba7fb4ba539e65b.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-cupcake/760/860';" alt="ハセガワベーカリーのチョコレートカップケーキ">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">カップケーキ / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/42358/640x640_rect_42358222.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-bread/860/980';" alt="honoka. 焼き菓子パン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">焼き菓子パン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/61167/61167272.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-sandwich/860/980';" alt="ハセガワベーカリーの苺サンド">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">苺サンド / 食べログ投稿写真</figcaption>
           </figure>
           <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/17550/17550803.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/honoka-gallery-sign/820/540';" alt="honoka. 店先の看板とパン">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-milk backdrop-blur">看板とパン / 食べログ投稿写真</figcaption>
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/85270/85270398.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hasegawa-gallery-melon/820/540';" alt="ハセガワベーカリーのメロンパン">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-ink/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">メロンパン / 食べログ投稿写真</figcaption>
           </figure>
         </div>
       </div>
@@ -251,51 +241,51 @@
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-stretch">
-        <div class="rounded-[8px] bg-cocoa p-8 text-milk shadow-soft md:p-12">
-          <p class="mb-4 text-xs font-black uppercase wide text-flour">Access</p>
-          <h2 class="tight font-display text-5xl font-bold leading-none md:text-7xl">百合が丘の、<br>朝へ。</h2>
+        <div class="rounded-[8px] bg-night p-8 text-paper shadow-soft md:p-12">
+          <p class="mb-4 text-xs font-black uppercase wide text-wheat">Access</p>
+          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">つつじが丘の、<br>朝へ。</h2>
           <dl class="mt-12 grid gap-7 text-sm">
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Shop</dt>
-              <dd class="text-lg font-black">honoka.（ホノカ）</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Shop</dt>
+              <dd class="text-lg font-black">ハセガワベーカリー（Hasegawa Bakery）</dd>
             </div>
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Address</dt>
-              <dd class="copy text-milk/76">〒518-0471 三重県名張市百合が丘東1番町89</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Address</dt>
+              <dd class="copy text-paper/76">〒518-0432 三重県名張市つつじが丘北3-3-8</dd>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Tel</dt>
-                <dd><a class="text-milk/88 underline decoration-milk/30 underline-offset-4" href="tel:0595-50-1037">0595-50-1037</a></dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Tel</dt>
+                <dd><a class="text-paper/88 underline decoration-paper/30 underline-offset-4" href="tel:0595-44-6527">0595-44-6527</a></dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Open</dt>
-                <dd class="text-milk/76">月-土 7:30-14:00</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Open</dt>
+                <dd class="text-paper/76">月・木・金・土・日 7:30-18:00</dd>
               </div>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Closed</dt>
-                <dd class="text-milk/76">日曜日</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Closed</dt>
+                <dd class="text-paper/76">火曜日・水曜日</dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Access</dt>
-                <dd class="text-milk/76">近鉄大阪線 名張駅から約1.6km</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Parking</dt>
+                <dd class="text-paper/76">向かいに商店街共同駐車場あり</dd>
               </div>
             </div>
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-milk/42">Note</dt>
-              <dd class="copy text-milk/76">営業時間・定休日は変更される場合があります。来店前の確認がおすすめです。</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Note</dt>
+              <dd class="copy text-paper/76">売り切れ次第終了。営業時間・定休日は変更される場合があります。</dd>
             </div>
           </dl>
         </div>
         <div class="min-h-[520px] overflow-hidden rounded-[8px] bg-white shadow-soft">
           <iframe
-            title="honoka. Google Map"
+            title="ハセガワベーカリー Google Map"
             class="h-full min-h-[520px] w-full"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=34.608569,136.10248&hl=ja&z=17&output=embed"></iframe>
+            src="https://www.google.com/maps?q=34.6073969,136.1320622&hl=ja&z=17&output=embed"></iframe>
         </div>
       </div>
     </section>
@@ -303,7 +293,7 @@
 
   <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
-      <p>honoka. bakery / Nabari</p>
+      <p>Hasegawa Bakery / Nabari</p>
       <p>© 2026 Landing Preview</p>
     </div>
   </footer>
