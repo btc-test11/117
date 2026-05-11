@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>井内孝徳司法書士事務所 | 名張の相続・登記・成年後見相談</title>
-  <meta name="description" content="三重県名張市桜ケ丘の井内孝徳司法書士事務所。相続、不動産登記、会社登記、成年後見など、暮らしと事業の法務手続きをわかりやすく支援します。" />
+  <title>川口登記測量事務所 | 名張の司法書士・土地家屋調査士</title>
+  <meta name="description" content="三重県名張市桔梗が丘の川口登記測量事務所。司法書士・土地家屋調査士として、相続・不動産登記・法人登記・測量を安心して進められるよう支援します。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,21 +12,21 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Noto Serif JP"', '"Noto Sans JP"', 'serif']
+            display: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif']
           },
           colors: {
-            ink: '#15171a',
-            paper: '#f6f2ea',
-            ivory: '#fffdf8',
-            brass: '#a57935',
-            sage: '#7d8a78',
-            graphite: '#262a2f',
-            mist: '#e4e8df',
-            seal: '#7e2e2e'
+            sumi: '#151819',
+            washi: '#f7f3ea',
+            bone: '#fffdf7',
+            cedar: '#7a4a2a',
+            moss: '#4f6b5c',
+            stone: '#d9d3c6',
+            vermilion: '#9b3c2f',
+            night: '#202526'
           },
           boxShadow: {
-            soft: '0 24px 80px rgba(21, 23, 26, .12)',
-            deep: '0 34px 120px rgba(21, 23, 26, .22)'
+            soft: '0 22px 80px rgba(21, 24, 25, .12)',
+            deep: '0 34px 110px rgba(21, 24, 25, .24)'
           }
         }
       }
@@ -34,34 +34,37 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
-      color: #15171a;
+      color: #151819;
       background:
-        linear-gradient(110deg, rgba(228,232,223,.82) 0 28%, transparent 28% 100%),
-        radial-gradient(circle at 78% 12%, rgba(165,121,53,.18), transparent 24%),
-        linear-gradient(180deg, #f6f2ea 0%, #fffdf8 48%, #eef2ea 100%);
+        linear-gradient(115deg, rgba(217,211,198,.58) 0 34%, transparent 34% 100%),
+        radial-gradient(circle at 86% 11%, rgba(122,74,42,.16), transparent 25%),
+        linear-gradient(180deg, #f7f3ea 0%, #fffdf7 46%, #eef1ea 100%);
     }
     .tight { letter-spacing: -.075em; }
     .wide { letter-spacing: .2em; }
     .copy { line-height: 2.05; }
     .glass {
-      background: rgba(255, 253, 248, .68);
+      background: rgba(255, 253, 247, .68);
       backdrop-filter: blur(22px);
       -webkit-backdrop-filter: blur(22px);
     }
     .reveal {
       opacity: 0;
-      transform: translateY(46px);
+      transform: translateY(48px);
       transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
     }
-    .reveal.is-visible { opacity: 1; transform: translateY(0); }
-    .hero-mark {
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-photo {
       background-image:
-        linear-gradient(rgba(38,42,47,.24), rgba(38,42,47,.24)),
-        url("https://picsum.photos/seed/iuchi-law-office-desk/1300/1500");
+        linear-gradient(180deg, rgba(32,37,38,.08), rgba(32,37,38,.44)),
+        url("https://lh3.googleusercontent.com/sitesv/AA5AbUAufqF6wgtBHf8rJ4ULMR6FinxWUb3Ld5hcNQc4thmnyoDnThL2_GfK89EsqUrQN0wg4FtvUSw4Rmr-zrVZSl_0HoWzDE-BMiUMikK_to0qJV2iDl30EHI5aXXfplxW7kTkNhfBLIk02q0yqxBz20rcnyPs9EF-3QzHXy1newFpx3t-WWc4zFuPBJ8Ps85mZWAegnxrTYROO6i8fT1JbLdXPik5gNIxQk6by78=w1280");
       background-size: cover;
       background-position: center;
     }
@@ -72,135 +75,137 @@
       gap: 16px;
     }
     .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 6; }
-    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 38px; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 36px; }
     .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 5; }
     .masonry figure:nth-child(4) { grid-column: span 3; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -30px; }
+    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -28px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #f6f2ea 0%, #fffdf8 52%, #eef2ea 100%); }
-      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 92px; gap: 12px; }
+      body { background: linear-gradient(180deg, #f7f3ea 0%, #fffdf7 52%, #eef1ea 100%); }
+      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 94px; gap: 12px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
       .masonry figure:nth-child(4) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-seal selection:text-white">
-  <header class="glass fixed inset-x-0 top-0 z-50 border-b border-white/60">
+<body class="font-sans antialiased selection:bg-vermilion selection:text-white">
+  <header class="glass fixed inset-x-0 top-0 z-50 border-b border-white/70">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="井内孝徳司法書士事務所 ホーム">
-        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-graphite font-display text-lg font-black text-paper shadow-soft">井</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="川口登記測量事務所 ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-lg bg-night font-display text-lg font-extrabold text-washi shadow-soft">川</span>
         <span class="leading-none">
-          <span class="block text-base font-black tracking-[-.06em] md:text-lg">井内孝徳司法書士事務所</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/45">judicial scrivener / nabari</span>
+          <span class="block text-base font-black tracking-[-.06em] md:text-lg">川口登記測量事務所</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-sumi/45">registration / survey / nabari</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-ink/54 md:flex">
-        <a class="transition hover:text-ink" href="#about">About</a>
-        <a class="transition hover:text-ink" href="#service">Service</a>
-        <a class="transition hover:text-ink" href="#voice">Voice</a>
-        <a class="transition hover:text-ink" href="#gallery">Gallery</a>
-        <a class="transition hover:text-ink" href="#access">Access</a>
+      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-sumi/54 md:flex">
+        <a class="transition hover:text-sumi" href="#about">About</a>
+        <a class="transition hover:text-sumi" href="#works">Works</a>
+        <a class="transition hover:text-sumi" href="#voice">Voice</a>
+        <a class="transition hover:text-sumi" href="#gallery">Gallery</a>
+        <a class="transition hover:text-sumi" href="#access">Access</a>
       </nav>
-      <a href="tel:0595-61-0160" class="rounded-[8px] bg-graphite px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-seal">Call</a>
+      <a href="tel:0595-65-5061" class="rounded-lg bg-night px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-washi transition hover:bg-vermilion">Call</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.04fr_.96fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-brass">Iuchi Takanori Judicial Scrivener Office</p>
-          <h1 class="tight font-display text-[clamp(3.3rem,8vw,8.25rem)] font-black leading-[.92]">
-            迷う前に、<br>整える。
+          <p class="mb-6 text-xs font-black uppercase wide text-cedar">Since 1974 / Kikyougaoka</p>
+          <h1 class="tight font-display text-[clamp(3.4rem,8vw,8.4rem)] font-extrabold leading-[.91]">
+            境界を、<br>安心に変える。
           </h1>
-          <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
-            <p class="copy text-[15px] text-ink/66">
-              相続、登記、後見、会社手続き。暮らしの大きな決断を、名張の身近な専門家がわかりやすく支えます。
+          <div class="mt-10 grid max-w-2xl gap-6 border-l border-sumi/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
+            <p class="copy text-[15px] text-sumi/66">
+              名張の司法書士・土地家屋調査士事務所。登記、測量、相続、会社手続きまで、大切な財産をていねいに守ります。
             </p>
-            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">相談する</a>
+            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-lg border border-sumi px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-sumi hover:text-washi">相談する</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <div class="hero-mark absolute right-0 top-0 h-[74%] w-[82%] rounded-[8px] shadow-deep"></div>
-          <img class="absolute bottom-6 left-0 h-[42%] w-[57%] rounded-[8px] border-8 border-paper object-cover shadow-deep" src="https://picsum.photos/seed/iuchi-nabari-office-exterior/900/720" alt="名張の街にある相談しやすい司法書士事務所のイメージ">
-          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-ivory/88 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-black tracking-[-.04em]">1st</p>
-            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">listen carefully</p>
+          <div class="hero-photo absolute right-0 top-0 h-[74%] w-[82%] rounded-lg shadow-deep"></div>
+          <img class="absolute bottom-6 left-0 h-[42%] w-[57%] rounded-lg border-8 border-washi object-cover shadow-deep" src="https://picsum.photos/seed/surveying-field-boundary/900/720" alt="測量現場のイメージ">
+          <div class="absolute bottom-24 right-6 hidden rounded-lg bg-bone/88 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
+            <p class="font-display text-4xl font-extrabold tracking-[-.04em]">50+</p>
+            <p class="text-[10px] font-black uppercase tracking-[.28em] text-sumi/46">years of trust</p>
           </div>
-          <p class="absolute left-2 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">inheritance / registration / guardianship</p>
+          <p class="absolute left-2 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-sumi/35 lg:block">real estate registration / boundary survey</p>
         </div>
       </div>
     </section>
 
     <section id="about" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.82fr_1.18fr]">
+      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.84fr_1.16fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-sage">About</p>
-          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">堅い手続きを、<br>やさしい順番に。</h2>
-          <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
-            井内孝徳司法書士事務所は、三重県名張市桜ケ丘にある司法書士事務所です。専門知識を有するサービス業として、お客様本位の問題解決を大切にしています。
+          <p class="mb-4 text-xs font-black uppercase wide text-moss">About</p>
+          <h2 class="tight font-display text-5xl font-extrabold leading-[.96] md:text-7xl">土地と建物に、<br>確かな順番を。</h2>
+          <p class="copy mt-8 max-w-md text-[15px] text-sumi/64">
+            川口登記測量事務所は、三重県名張市桔梗が丘の司法書士・土地家屋調査士事務所です。昭和49年創業。安全で円滑な登記・測量を目指し、地域の財産を守ってきました。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded-[8px] bg-ivory/90 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-brass">Local</p>
-            <p class="copy text-[15px] text-ink/68">
-              名張駅からほど近い桜ケ丘。相続や不動産の相談を、生活圏の中で進められます。
-            </p>
+          <article class="rounded-lg bg-bone/90 p-8 shadow-soft">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-cedar">Office</p>
+            <dl class="space-y-4 text-sm leading-relaxed text-sumi/68">
+              <div><dt class="font-black text-sumi">代表</dt><dd>司法書士・行政書士 川口 昕司<br>土地家屋調査士 川口 浩司</dd></div>
+              <div><dt class="font-black text-sumi">所在地</dt><dd>三重県名張市桔梗が丘2-5-76</dd></div>
+              <div><dt class="font-black text-sumi">駐車場</dt><dd>8台</dd></div>
+            </dl>
           </article>
-          <article class="translate-y-10 rounded-[8px] bg-graphite p-8 text-paper shadow-deep md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-mist">Promise</p>
-            <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
-              <li>初めてでも話しやすい説明</li>
-              <li>必要書類と手順を明確化</li>
-              <li>相続・登記の不安を整理</li>
-              <li>地域事情に合わせた進行</li>
+          <article class="translate-y-10 rounded-lg bg-night p-8 text-washi shadow-deep md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-stone">Benefit</p>
+            <ul class="space-y-4 text-[15px] leading-relaxed text-washi/76">
+              <li>境界や面積の不安を整理</li>
+              <li>名義変更の手続きを明確化</li>
+              <li>相続・売買・贈与に対応</li>
+              <li>法人登記まで一貫して相談</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-[8px] bg-mist shadow-deep md:col-span-2 md:mt-12">
-            <img class="h-[390px] w-full object-cover opacity-95" src="https://picsum.photos/seed/iuchi-consultation-room/1400/820" alt="落ち着いて相談できる面談スペースのイメージ">
-            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-ivory/90 p-5 shadow-soft backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-brass">Benefit</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">悩みを手続きに翻訳し、次の一歩を見える化。</p>
+          <div class="relative overflow-hidden rounded-lg bg-stone shadow-deep md:col-span-2 md:mt-12">
+            <img class="h-[390px] w-full object-cover opacity-95" src="https://picsum.photos/seed/legal-documents-survey-map/1400/820" alt="登記書類と測量図面のイメージ">
+            <div class="absolute bottom-6 left-6 max-w-xs rounded-lg bg-bone/90 p-5 shadow-soft backdrop-blur">
+              <p class="text-xs font-black uppercase wide text-cedar">Promise</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">複雑な不動産の問題を、今日やることまで小さくする。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="service" class="reveal px-5 py-24 lg:px-8">
+    <section id="works" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[.72fr_1.28fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-brass">Service</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">必要なことを、<br>必要なだけ。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-cedar">Works</p>
+            <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">迷いを、<br>手続きへ。</h2>
           </div>
-          <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            手続きの複雑さを減らし、期限、費用、書類、関係者への連絡を整理。判断に集中できる状態をつくります。
+          <p class="copy max-w-xl text-[15px] text-sumi/66 md:justify-self-end">
+            土地・建物の名義、境界、面積、会社の登記。専門用語をほどき、必要な順番で進めます。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-4">
-          <article class="rounded-[8px] bg-ivory p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-sage">01</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">相続手続き</h3>
-            <p class="copy mt-4 text-sm text-ink/62">名義変更、遺産分割、必要書類の整理まで、家族の負担を軽く。</p>
-          </article>
-          <article class="rounded-[8px] bg-graphite p-7 text-paper shadow-deep md:translate-y-10">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-mist">02</p>
+          <article class="rounded-lg bg-bone p-7 shadow-soft">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">01</p>
             <h3 class="mt-8 text-xl font-black tracking-[-.05em]">不動産登記</h3>
-            <p class="copy mt-4 text-sm text-paper/66">売買、贈与、住宅ローン完済後の抹消などを正確に進行。</p>
+            <p class="copy mt-4 text-sm text-sumi/62">売買、贈与、相続、住所変更、住宅ローン完済後の手続きまで。</p>
           </article>
-          <article class="rounded-[8px] bg-ivory p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-sage">03</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">会社登記</h3>
-            <p class="copy mt-4 text-sm text-ink/62">設立、役員変更、本店移転など、事業の節目を滞りなく。</p>
+          <article class="rounded-lg bg-night p-7 text-washi shadow-deep md:translate-y-10">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-stone">02</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">土地測量</h3>
+            <p class="copy mt-4 text-sm text-washi/66">境界確認、面積の把握、分筆、合筆、地目変更を正確に。</p>
           </article>
-          <article class="rounded-[8px] bg-ivory p-7 shadow-soft md:translate-y-6">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-sage">04</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">成年後見</h3>
-            <p class="copy mt-4 text-sm text-ink/62">将来の不安、財産管理、身上保護を実務の目線で支援。</p>
+          <article class="rounded-lg bg-bone p-7 shadow-soft">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">03</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">建物登記</h3>
+            <p class="copy mt-4 text-sm text-sumi/62">新築、増築、解体など、建物の変化を登記へ反映。</p>
+          </article>
+          <article class="rounded-lg bg-bone p-7 shadow-soft md:translate-y-6">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">04</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">法人登記</h3>
+            <p class="copy mt-4 text-sm text-sumi/62">会社設立、役員変更、資本金変更など事業の節目を支援。</p>
           </article>
         </div>
       </div>
@@ -210,132 +215,103 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-seal">Reviews</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">相談後に、<br>表情が変わる。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Reviews</p>
+            <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">不安が、<br>輪郭を持つ。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-ink/62">公開レビューが確認できないため、想定される相談体験をもとにしたお客様の声です。</p>
+          <p class="copy max-w-md text-sm text-sumi/62">公開レビューは確認できなかったため、想定される相談体験をもとにしたお客様の声です。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
-          <article class="rounded-[8px] bg-ivory p-8 shadow-soft">
+          <article class="rounded-lg bg-bone p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">相続相談</span>
-              <span class="font-display text-4xl font-black text-brass">01</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">境界相談</span>
+              <span class="font-display text-4xl font-extrabold text-cedar">01</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">何から始めるかが明確に</p>
-            <p class="copy mt-5 text-sm text-ink/64">必要な戸籍や登記の流れを一つずつ説明してもらい、家族で話す順番まで整理できました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">隣地との話し合いが進めやすくなった</p>
+            <p class="copy mt-5 text-sm text-sumi/64">何を確認し、どの資料をそろえるべきかが明確に。感情的にならず、順番に進められました。</p>
           </article>
-          <article class="rounded-[8px] bg-graphite p-8 text-paper shadow-deep md:translate-y-10">
+          <article class="rounded-lg bg-night p-8 text-washi shadow-deep md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-mist">不動産登記</span>
-              <span class="font-display text-4xl font-black text-paper">02</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-stone">相続登記</span>
+              <span class="font-display text-4xl font-extrabold text-washi">02</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">専門用語が怖くなかった</p>
-            <p class="copy mt-5 text-sm text-paper/66">難しい内容を、こちらの事情に合わせて短く説明。期限も見えて安心して進められました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">家族で決めることが見えた</p>
+            <p class="copy mt-5 text-sm text-washi/66">戸籍や名義変更の流れを短く説明してもらい、相談後すぐに動けました。</p>
           </article>
-          <article class="rounded-[8px] bg-ivory p-8 shadow-soft">
+          <article class="rounded-lg bg-bone p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-sage">会社手続き</span>
-              <span class="font-display text-4xl font-black text-brass">03</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">会社登記</span>
+              <span class="font-display text-4xl font-extrabold text-cedar">03</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">本業に集中できた</p>
-            <p class="copy mt-5 text-sm text-ink/64">役員変更の登記を任せられ、準備するものだけが明確。手戻りなく完了しました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">事業の変更を止めずに済んだ</p>
+            <p class="copy mt-5 text-sm text-sumi/64">役員変更に必要な書類と期限を整理してもらい、本業に集中できました。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="reveal px-5 py-24 lg:px-8">
+    <section id="gallery" class="reveal overflow-hidden px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <div class="mb-12 grid gap-8 md:grid-cols-[.78fr_1.22fr] md:items-end">
+        <div class="mb-12 grid gap-8 md:grid-cols-[1fr_.8fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-sage">Gallery</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">落ち着いて、<br>話せる場所。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-cedar">Gallery</p>
+            <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">地域に根ざす、<br>相談の場所。</h2>
           </div>
-          <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            Googleマップ等から直接利用できる実写真URLが確認できないため、プレビューで確実に表示される安定した外部画像で相談シーンを構成しています。
-          </p>
+          <p class="copy text-[15px] text-sumi/62">確認できた公式サイト・ポータル掲載写真を中心に構成。不足分は安定表示できるイメージ写真で補っています。</p>
         </div>
         <div class="masonry">
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-office-front/900/1200" alt="司法書士事務所の外観イメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Office / entrance</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-deep">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://img2.e-shops.jp/local/37566_42631253856005.jpg" alt="川口登記測量事務所の外観写真">
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-meeting/760/620" alt="相談スペースのイメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Consultation / table</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/sitesv/AA5AbUAufqF6wgtBHf8rJ4ULMR6FinxWUb3Ld5hcNQc4thmnyoDnThL2_GfK89EsqUrQN0wg4FtvUSw4Rmr-zrVZSl_0HoWzDE-BMiUMikK_to0qJV2iDl30EHI5aXXfplxW7kTkNhfBLIk02q0yqxBz20rcnyPs9EF-3QzHXy1newFpx3t-WWc4zFuPBJ8Ps85mZWAegnxrTYROO6i8fT1JbLdXPik5gNIxQk6by78=w1280" alt="川口登記測量事務所の掲載写真">
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-documents/720/900" alt="登記書類とペンのイメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Documents / registration</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-deep">
+            <img class="h-full w-full object-cover object-left transition duration-700 group-hover:scale-105" src="https://img2.e-shops.jp/local/37566_42631253856005.jpg" alt="川口登記測量事務所の入口周辺写真">
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-nabari-town/900/620" alt="名張の街並みのイメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Nabari / local support</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/nabari-office-consulting/1100/760" alt="相談風景のイメージ">
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-books/620/960" alt="法律書籍のイメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Law / knowledge</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-deep">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/cadastral-map-and-pen/760/1100" alt="図面と書類のイメージ">
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-ivory shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/iuchi-gallery-signature/820/540" alt="署名手続きのイメージ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-graphite/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">Procedure / next step</figcaption>
+          <figure class="group overflow-hidden rounded-lg bg-stone shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/nabari-kikyougaoka-street/1000/620" alt="名張市桔梗が丘周辺のイメージ">
           </figure>
         </div>
       </div>
     </section>
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-stretch">
-        <div class="rounded-[8px] bg-graphite p-8 text-paper shadow-deep md:p-12">
-          <p class="mb-4 text-xs font-black uppercase wide text-mist">Access</p>
-          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">名張駅近く、<br>桜ケ丘へ。</h2>
-          <dl class="mt-12 grid gap-7 text-sm">
-            <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Office</dt>
-              <dd class="text-lg font-black">井内孝徳司法書士事務所</dd>
-            </div>
-            <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Address</dt>
-              <dd class="copy text-paper/76">〒518-0712 三重県名張市桜ケ丘3088-106 キャッスル桜ケ丘104</dd>
-            </div>
-            <div class="grid gap-6 md:grid-cols-2">
-              <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Tel</dt>
-                <dd><a class="text-paper/88 underline decoration-paper/30 underline-offset-4" href="tel:0595-61-0160">0595-61-0160</a></dd>
-              </div>
-              <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Fax</dt>
-                <dd class="text-paper/76">0595-61-0161</dd>
-              </div>
-            </div>
-            <div class="grid gap-6 md:grid-cols-2">
-              <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Category</dt>
-                <dd class="text-paper/76">司法書士事務所</dd>
-              </div>
-              <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Area</dt>
-                <dd class="text-paper/76">三重県名張市・伊賀エリア</dd>
-              </div>
-            </div>
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-stretch">
+        <div class="rounded-lg bg-night p-8 text-washi shadow-deep md:p-10">
+          <p class="mb-4 text-xs font-black uppercase wide text-stone">Access</p>
+          <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">相談は、<br>桔梗が丘で。</h2>
+          <p class="copy mt-8 text-[15px] text-washi/68">
+            平日9:00から17:00まで。駐車場は8台分あります。土地・建物・会社の登記や測量で迷ったら、まず状況をお聞かせください。
+          </p>
+          <dl class="mt-10 grid gap-5 text-sm leading-relaxed text-washi/78 sm:grid-cols-2">
+            <div><dt class="font-black text-washi">住所</dt><dd>〒518-0622<br>三重県名張市桔梗が丘2-5-76</dd></div>
+            <div><dt class="font-black text-washi">電話</dt><dd><a class="underline decoration-washi/30 underline-offset-4" href="tel:0595-65-5061">0595-65-5061</a></dd></div>
+            <div><dt class="font-black text-washi">営業時間</dt><dd>9:00-17:00</dd></div>
+            <div><dt class="font-black text-washi">定休日</dt><dd>土・日・祝</dd></div>
           </dl>
         </div>
-        <div class="min-h-[560px] overflow-hidden rounded-[8px] bg-ivory shadow-deep">
+        <div class="min-h-[520px] overflow-hidden rounded-lg bg-stone shadow-deep">
           <iframe
-            title="井内孝徳司法書士事務所 Google Map"
-            class="h-full min-h-[560px] w-full"
+            title="川口登記測量事務所 Google Map"
+            src="https://maps.google.com/maps?q=%E5%B7%9D%E5%8F%A3%E7%99%BB%E8%A8%98%E6%B8%AC%E9%87%8F%E4%BA%8B%E5%8B%99%E6%89%80%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E6%A1%94%E6%A2%97%E3%81%8C%E4%B8%982-5-76&z=17&output=embed"
+            class="h-full min-h-[520px] w-full border-0"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=%E4%BA%95%E5%86%85%E5%AD%9D%E5%BE%B3%E5%8F%B8%E6%B3%95%E6%9B%B8%E5%A3%AB%E4%BA%8B%E5%8B%99%E6%89%80%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E6%A1%9C%E3%82%B1%E4%B8%983088-106-104&output=embed"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
-      <p>井内孝徳司法書士事務所</p>
-      <p>Sources: Google Maps / NextCity / いい相続 / 司法書士検索サイト</p>
+  <footer class="border-t border-sumi/10 px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-sumi/45 md:flex-row">
+      <p>Copyright © 川口登記測量事務所</p>
+      <p>司法書士・行政書士 / 土地家屋調査士</p>
     </div>
   </footer>
 
@@ -347,7 +323,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.16, rootMargin: '0px 0px -80px 0px' });
+    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
 
     document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
   </script>
