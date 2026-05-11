@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>御菓子司 星安 | 名張・上八町の和洋菓子</title>
-  <meta name="description" content="三重県名張市上八町の御菓子司 星安。看板銘菓「寳玉」をはじめ、和菓子と洋菓子がそろう名張駅徒歩圏のお菓子店。" />
+  <title>株式会社広島工務店 | 名張・伊賀の新築、リフォーム、店舗設計</title>
+  <meta name="description" content="三重県名張市西原町の株式会社広島工務店。1959年創業、自然素材と確かな施工で新築、リフォーム、店舗づくりを手がける地域密着の工務店。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,20 +12,21 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Zen Old Mincho"', '"Noto Sans JP"', 'serif']
+            display: ['"Shippori Mincho"', '"Noto Sans JP"', 'serif']
           },
           colors: {
-            sumi: '#15120f',
-            kinari: '#fffaf0',
-            azuki: '#7d2330',
-            matcha: '#5f6f43',
-            gold: '#c79a3d',
-            usu: '#eadcc3',
-            stone: '#f4eee2'
+            ink: '#161512',
+            paper: '#f7f1e8',
+            clay: '#9c4f35',
+            moss: '#64745a',
+            cedar: '#8d5d36',
+            plaster: '#fffdf8',
+            night: '#242923',
+            mist: '#d7dfd2'
           },
           boxShadow: {
-            soft: '0 28px 90px rgba(21,18,15,.13)',
-            lift: '0 18px 50px rgba(125,35,48,.18)'
+            deep: '0 34px 110px rgba(22,21,18,.18)',
+            float: '0 22px 70px rgba(100,116,90,.20)'
           }
         }
       }
@@ -33,94 +34,104 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
-      color: #15120f;
+      color: #161512;
       background:
-        linear-gradient(104deg, rgba(234,220,195,.78) 0 28%, transparent 28% 100%),
-        radial-gradient(circle at 82% 18%, rgba(199,154,61,.20), transparent 28%),
-        linear-gradient(180deg, #fffaf0 0%, #f4eee2 52%, #fffaf0 100%);
+        linear-gradient(102deg, rgba(215,223,210,.72) 0 24%, transparent 24% 100%),
+        radial-gradient(circle at 88% 9%, rgba(156,79,53,.18), transparent 26%),
+        linear-gradient(180deg, #f7f1e8 0%, #fffdf8 42%, #edf1e9 100%);
     }
-    .tight { letter-spacing: -.08em; }
-    .wide { letter-spacing: .24em; }
+    .tight { letter-spacing: -.075em; }
+    .wide { letter-spacing: .22em; }
     .copy { line-height: 2.05; }
+    .glass {
+      background: rgba(255, 253, 248, .68);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
     .reveal {
       opacity: 0;
-      transform: translateY(44px);
+      transform: translateY(46px);
       transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
     }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
-    .vertical-note {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      letter-spacing: .18em;
+    .grain::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .18;
+      background-image: url("https://picsum.photos/seed/hiroshima-koumuten-grain/1200/900");
+      background-size: cover;
+      mix-blend-mode: soft-light;
     }
     .masonry {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      grid-auto-rows: 76px;
-      gap: 14px;
+      grid-auto-rows: 82px;
+      gap: 16px;
     }
     .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 6; }
-    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 42px; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 38px; }
     .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 5; }
     .masonry figure:nth-child(4) { grid-column: span 3; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -28px; }
+    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -30px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #fffaf0 0%, #f4eee2 58%, #fffaf0 100%); }
-      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 92px; }
+      body { background: linear-gradient(180deg, #f7f1e8 0%, #fffdf8 48%, #edf1e9 100%); }
+      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 92px; gap: 12px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
       .masonry figure:nth-child(4) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-azuki selection:text-white">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-kinari/68 backdrop-blur-2xl">
+<body class="font-sans antialiased selection:bg-clay selection:text-white">
+  <header class="glass fixed inset-x-0 top-0 z-50 border-b border-white/60">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="御菓子司 星安 ホーム">
-        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-sumi font-display text-xl font-black text-kinari shadow-lift">星</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="株式会社広島工務店 ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-[8px] bg-night font-display text-lg font-extrabold text-paper shadow-float">廣</span>
         <span class="leading-none">
-          <span class="block text-lg font-black tracking-[-.06em]">御菓子司 星安</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-sumi/42">nabari sweets</span>
+          <span class="block text-base font-black tracking-[-.06em] md:text-lg">株式会社広島工務店</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/45">since 1959 / nabari</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-sumi/55 md:flex">
-        <a class="transition hover:text-sumi" href="#about">About</a>
-        <a class="transition hover:text-sumi" href="#voice">Voice</a>
-        <a class="transition hover:text-sumi" href="#gallery">Gallery</a>
-        <a class="transition hover:text-sumi" href="#access">Access</a>
+      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-ink/54 md:flex">
+        <a class="transition hover:text-ink" href="#about">About</a>
+        <a class="transition hover:text-ink" href="#voice">Voice</a>
+        <a class="transition hover:text-ink" href="#gallery">Works</a>
+        <a class="transition hover:text-ink" href="#access">Access</a>
       </nav>
-      <a href="#access" class="rounded-[8px] bg-sumi px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-kinari transition hover:bg-azuki">Map</a>
+      <a href="tel:0595-65-3040" class="rounded-[8px] bg-night px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-clay">Call</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-azuki">Hoshiyasu / Kamihatcho</p>
-          <h1 class="tight font-display text-[clamp(3.6rem,7.8vw,7.6rem)] font-black leading-[.93]">
-            甘い記憶を、<br>名張から。
+          <p class="mb-6 text-xs font-black uppercase wide text-clay">Hiroshima Koumuten / Mie Nabari</p>
+          <h1 class="tight font-display text-[clamp(3.55rem,8vw,8rem)] font-extrabold leading-[.92]">
+            木の家は、<br>暮らしを守る。
           </h1>
-          <div class="mt-10 grid max-w-2xl gap-6 border-l border-sumi/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
-            <p class="copy text-[15px] text-sumi/66">
-              看板銘菓「寳玉」からロールケーキ、マドレーヌまで。和と洋が並ぶ一軒で、今日の手みやげが決まる。
+          <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
+            <p class="copy text-[15px] text-ink/66">
+              名張・伊賀の冬、湿気、日差しまで読む。新築もリフォームも、自然素材と確かな施工で、長く心地いい住まいへ。
             </p>
-            <a href="#gallery" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-sumi px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-sumi hover:text-kinari">See sweets</a>
+            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-[8px] border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">相談する</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <img class="absolute right-0 top-0 h-[72%] w-[82%] rounded-[8px] object-cover shadow-soft" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1120&q=85" alt="和洋菓子が並ぶ店頭のイメージ">
-          <img class="absolute bottom-5 left-0 h-[42%] w-[55%] rounded-[8px] border-8 border-kinari object-cover shadow-soft" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=780&q=85" alt="菓子折りのイメージ">
-          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-kinari/90 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-black tracking-[-.04em]">寳玉</p>
-            <p class="text-[10px] font-black uppercase tracking-[.28em] text-sumi/46">signature</p>
+          <img class="absolute right-0 top-0 h-[73%] w-[82%] rounded-[8px] object-cover shadow-deep" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/03/IMG_3241-450x450.jpg" alt="広島工務店が手がけた木の内装の店舗施工事例">
+          <img class="absolute bottom-6 left-0 h-[42%] w-[56%] rounded-[8px] border-8 border-paper object-cover shadow-deep" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/02/%E7%AA%AA%E7%94%B0%E3%81%95%E3%82%93%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%81%AE%E6%A8%AA%E3%82%B5%E3%82%A4%E3%82%BA-450x450.jpg" alt="広島工務店が手がけたインナーガレージのある住宅">
+          <div class="absolute bottom-24 right-6 hidden rounded-[8px] bg-plaster/88 px-5 py-4 text-right shadow-float backdrop-blur md:block">
+            <p class="font-display text-4xl font-extrabold tracking-[-.04em]">4.5/5.0</p>
+            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">review score</p>
           </div>
-          <p class="vertical-note absolute left-2 top-12 hidden text-xs font-black uppercase text-sumi/35 lg:block">wagashi and gateaux</p>
+          <p class="absolute left-2 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">new construction / reform / shop</p>
         </div>
       </div>
     </section>
@@ -128,33 +139,33 @@
     <section id="about" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.82fr_1.18fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-matcha">About</p>
-          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">名張の名産を、<br>美しく包む。</h2>
-          <p class="copy mt-8 max-w-md text-[15px] text-sumi/64">
-            名張市上八町の御菓子司 星安。観光協会では、こだわりの和洋菓子がそろう店として紹介されています。最中に餅を包んだ「寳玉」は、幅広い世代に親しまれる看板商品です。
+          <p class="mb-4 text-xs font-black uppercase wide text-moss">About</p>
+          <h2 class="tight font-display text-5xl font-extrabold leading-[.96] md:text-7xl">この土地を、<br>知っている。</h2>
+          <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
+            1959年創業。名張・伊賀の気候風土に合わせ、無垢材、漆喰、珪藻土などを使った家づくりを提案する地域密着の工務店です。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded-[8px] bg-white/84 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-azuki">Selection</p>
-            <p class="copy text-[15px] text-sumi/68">
-              和菓子、洋菓子、ロールケーキ、マドレーヌ。家用にも贈答にも選びやすい品ぞろえ。
+          <article class="rounded-[8px] bg-plaster/90 p-8 shadow-float">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-clay">Comfort</p>
+            <p class="copy text-[15px] text-ink/68">
+              伊賀盆地の底冷えや湿気を見越して、見た目だけで終わらない住み心地を整えます。
             </p>
           </article>
-          <article class="translate-y-10 rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-gold">Benefit</p>
-            <ul class="space-y-4 text-[15px] leading-relaxed text-kinari/76">
-              <li>名張駅から徒歩圏</li>
-              <li>駐車場あり</li>
-              <li>テイクアウト利用</li>
-              <li>手みやげに映える菓子</li>
+          <article class="translate-y-10 rounded-[8px] bg-night p-8 text-paper shadow-deep md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-mist">Strength</p>
+            <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
+              <li>新築、建替え、全面改修</li>
+              <li>古民家再生、自然素材</li>
+              <li>カフェ、美容室、店舗改装</li>
+              <li>耐震診断、インスペクション対応</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-[8px] bg-usu shadow-soft md:col-span-2 md:mt-12">
-            <img class="h-[380px] w-full object-cover opacity-95" src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1320&q=85" alt="菓子店のディスプレイのイメージ">
-            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-kinari/88 p-5 shadow-lift backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-azuki">Awarded</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">寳玉は菓子博栄誉賞を受賞。</p>
+          <div class="grain relative overflow-hidden rounded-[8px] bg-mist shadow-deep md:col-span-2 md:mt-12">
+            <img class="h-[390px] w-full object-cover opacity-95" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/03/%E4%B8%8A%E4%B9%85%E4%BF%9D%E3%81%95%E3%82%93%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%81%AE%E6%A8%AA%E3%82%B5%E3%82%A4%E3%82%BA3984%C3%972656-2-450x450.png" alt="広島工務店の施工した作業場外観">
+            <div class="absolute bottom-6 left-6 max-w-xs rounded-[8px] bg-plaster/90 p-5 shadow-float backdrop-blur">
+              <p class="text-xs font-black uppercase wide text-clay">Benefit</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">相談から施工後まで、顔が見える距離で伴走。</p>
             </div>
           </div>
         </div>
@@ -165,35 +176,35 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-azuki">Reviews</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">迷わず、<br>買える。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-clay">Reviews</p>
+            <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">任せた理由が、<br>残る。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-sumi/62">食べログ・エキテンの公開レビューをもとに、来店前に伝わる価値へ要約しています。</p>
+          <p class="copy max-w-md text-sm text-ink/62">リフォーム評価ナビの公開レビューをもとに、来店前に知りたい評価を短く整理しました。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
-          <article class="rounded-[8px] bg-white p-8 shadow-soft">
+          <article class="rounded-[8px] bg-plaster p-8 shadow-float">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-matcha">Tabelog</span>
-              <span class="font-display text-4xl font-black text-azuki">6</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">K.H. さん</span>
+              <span class="font-display text-4xl font-extrabold text-clay">4.0</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">品数が豊富</p>
-            <p class="copy mt-5 text-sm text-sumi/64">和菓子・洋菓子がそろい、名張市内の地名を冠したマドレーヌも楽しめるという声。</p>
+            <p class="text-lg font-black tracking-[-.04em]">部屋の使い勝手が改善</p>
+            <p class="copy mt-5 text-sm text-ink/64">提案内容と職人の技術に納得。無駄な場所を整え、広く便利に暮らせる部屋になったという評価。</p>
           </article>
-          <article class="rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:translate-y-10">
+          <article class="rounded-[8px] bg-night p-8 text-paper shadow-deep md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-gold">Ekiten</span>
-              <span class="font-display text-4xl font-black text-kinari">3.5</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-mist">urikaede さん</span>
+              <span class="font-display text-4xl font-extrabold text-paper">4.3</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">伊賀ロールをぜひ</p>
-            <p class="copy mt-5 text-sm text-kinari/66">ふんわり生地にクリームがたっぷり入ったロールケーキが好評。駐車場の使いやすさにも触れられています。</p>
+            <p class="text-lg font-black tracking-[-.04em]">経験と発想のバランス</p>
+            <p class="copy mt-5 text-sm text-paper/66">経験豊富な代表、アイデアを出す設計者、現場を支える監督への信頼が伝わるレビュー。</p>
           </article>
-          <article class="rounded-[8px] bg-white p-8 shadow-soft">
+          <article class="rounded-[8px] bg-plaster p-8 shadow-float">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-matcha">Local</span>
-              <span class="font-display text-4xl font-black text-azuki">寳</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">いがこま さん</span>
+              <span class="font-display text-4xl font-extrabold text-clay">4.7</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">看板商品がある安心</p>
-            <p class="copy mt-5 text-sm text-sumi/64">餅をやわらかな粒あんで包む「寳玉」。世代を問わず選べる、星安らしい手みやげです。</p>
+            <p class="text-lg font-black tracking-[-.04em]">断熱と空間が変わる</p>
+            <p class="copy mt-5 text-sm text-ink/64">担当者の人柄と打ち合わせのしやすさを評価。古い日本家屋が快適に住める空間へ。</p>
           </article>
         </div>
       </div>
@@ -203,37 +214,37 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[.78fr_1.22fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-matcha">Gallery</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">ひと箱で、<br>華やぐ。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-moss">Gallery</p>
+            <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">暮らしの、<br>手触り。</h2>
           </div>
-          <p class="copy max-w-xl text-[15px] text-sumi/66 md:justify-self-end">
-            ギャラリーは食べログ投稿写真のURLを使用。読み込めない場合は、安定したプレースホルダーへ切り替えます。
+          <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
+            公式サイトとリフォーム評価ナビで公開されている施工写真を使用。読み込めない場合はプレースホルダーへ切り替えます。
           </p>
         </div>
         <div class="masonry">
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/221024/640x640_rect_77b49f7f701bb69044e9830d6d7f951d.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-ho/900/1200';" alt="星安の菓子詰め合わせ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">焼き菓子と寳玉 / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/03/IMG_3241-450x450.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-cafe/900/1200';" alt="木の梁を活かしたカフェ施工事例">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">店舗リフォーム / cafe maru</figcaption>
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/115847/640x640_rect_115847070.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-castella/760/620';" alt="星安のベビーカステラ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ベビーカステラ / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/03/%E5%8C%97%E6%A9%8B%E3%81%95%E3%82%93%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%81%AE%E6%A8%AA%E3%82%B5%E3%82%A4%E3%82%BA-3-450x450.png" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-washitsu/760/620';" alt="和室リフォーム施工事例">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">リフォーム / 和室</figcaption>
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8708/8708244.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-cake/720/900';" alt="星安のケーキ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ケーキセット / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/02/%E7%AA%AA%E7%94%B0%E3%81%95%E3%82%93%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%81%AE%E6%A8%AA%E3%82%B5%E3%82%A4%E3%82%BA-450x450.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-garage/720/900';" alt="インナーガレージのある家">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">新築 / インナーガレージ</figcaption>
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8246/8246593.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-roll/900/620';" alt="星安のロールケーキ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ロールケーキ / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://kiwacocoro.co.jp/wp-content/uploads/2026/03/%E4%B8%8A%E4%B9%85%E4%BF%9D%E3%81%95%E3%82%93%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%81%AE%E6%A8%AA%E3%82%B5%E3%82%A4%E3%82%BA3984%C3%972656-2-450x450.png" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-atelier/900/620';" alt="作業場外観の施工事例">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">作業場 / 外観</figcaption>
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/8246/8246595.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-shortcake/620/960';" alt="星安のショートケーキ">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">ショートケーキ / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://www.refonavi.or.jp/data/uploads/img/shop/img/shop_mansion_private1_img_1773713346C1SAdgjspb2Only2mRupp3esSc.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-washstand/620/960';" alt="タイルと無垢材の洗面化粧台">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">造作洗面 / 自然素材</figcaption>
           </figure>
-          <figure class="group relative overflow-hidden rounded-[8px] bg-white shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://tblg.k-img.com/restaurant/images/Rvw/255944/640x640_rect_89fcac28782c9bc3140494512457bc9b.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hoshiyasu-gallery-wagashi/820/540';" alt="星安の和菓子">
-            <figcaption class="absolute bottom-0 left-0 right-0 bg-sumi/72 px-4 py-3 text-xs font-bold tracking-tight text-kinari backdrop-blur">乙女心 / 食べログ投稿写真</figcaption>
+          <figure class="group relative overflow-hidden rounded-[8px] bg-plaster shadow-float">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://www.refonavi.or.jp/data/uploads/img/shop/img/shop_mansion_shared3_img_1769146736C1SAdgjspb2Only2mRupp3esSc.jpg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hiroshima-works-beam/820/540';" alt="梁や柱を活かしたリフォーム">
+            <figcaption class="absolute bottom-0 left-0 right-0 bg-night/72 px-4 py-3 text-xs font-bold tracking-tight text-paper backdrop-blur">古民家再生 / 梁と柱</figcaption>
           </figure>
         </div>
       </div>
@@ -241,56 +252,56 @@
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-stretch">
-        <div class="rounded-[8px] bg-sumi p-8 text-kinari shadow-soft md:p-12">
-          <p class="mb-4 text-xs font-black uppercase wide text-gold">Access</p>
-          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">名張駅から、<br>歩いて一服。</h2>
+        <div class="rounded-[8px] bg-night p-8 text-paper shadow-deep md:p-12">
+          <p class="mb-4 text-xs font-black uppercase wide text-mist">Access</p>
+          <h2 class="tight font-display text-5xl font-extrabold leading-none md:text-7xl">名張で、<br>会いましょう。</h2>
           <dl class="mt-12 grid gap-7 text-sm">
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Shop</dt>
-              <dd class="text-lg font-black">御菓子司 星安 / Gateaux HOSHIYASU</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Company</dt>
+              <dd class="text-lg font-black">株式会社広島工務店</dd>
             </div>
             <div>
-              <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Address</dt>
-              <dd class="copy text-kinari/76">〒518-0711 三重県名張市上八町1486-10</dd>
+              <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Address</dt>
+              <dd class="copy text-paper/76">〒518-0603 三重県名張市西原町2605</dd>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Tel</dt>
-                <dd><a class="text-kinari/88 underline decoration-kinari/30 underline-offset-4" href="tel:0595-63-5050">0595-63-5050</a></dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Tel</dt>
+                <dd><a class="text-paper/88 underline decoration-paper/30 underline-offset-4" href="tel:0595-65-3040">0595-65-3040</a></dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Hours</dt>
-                <dd class="text-kinari/76">9:00 - 19:00</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Hours</dt>
+                <dd class="text-paper/76">8:00 - 17:40</dd>
               </div>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Closed</dt>
-                <dd class="text-kinari/76">1月1日 - 3日</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Closed</dt>
+                <dd class="text-paper/76">第2・4・5土曜、日曜、祝日</dd>
               </div>
               <div>
-                <dt class="mb-2 font-black uppercase tracking-[.18em] text-kinari/42">Parking</dt>
-                <dd class="text-kinari/76">10台</dd>
+                <dt class="mb-2 font-black uppercase tracking-[.18em] text-paper/42">Access</dt>
+                <dd class="text-paper/76">桔梗が丘駅より車で約10分</dd>
               </div>
             </div>
           </dl>
         </div>
-        <div class="min-h-[560px] overflow-hidden rounded-[8px] bg-white shadow-soft">
+        <div class="min-h-[560px] overflow-hidden rounded-[8px] bg-plaster shadow-deep">
           <iframe
-            title="御菓子司 星安 Google Map"
+            title="株式会社広島工務店 Google Map"
             class="h-full min-h-[560px] w-full"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=%E5%BE%A1%E8%8F%93%E5%AD%90%E5%8F%B8%20%E6%98%9F%E5%AE%89%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E4%B8%8A%E5%85%AB%E7%94%BA1486-10&output=embed"></iframe>
+            src="https://www.google.com/maps?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%BA%83%E5%B3%B6%E5%B7%A5%E5%8B%99%E5%BA%97%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E8%A5%BF%E5%8E%9F%E7%94%BA2605&output=embed"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-sumi/10 px-5 py-10 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-sumi/45 md:flex-row">
-      <p>御菓子司 星安</p>
-      <p>Source: 名張市観光協会 / 食べログ / エキテン</p>
+  <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
+      <p>株式会社広島工務店</p>
+      <p>Sources: 公式サイト / リフォーム評価ナビ / Houzz</p>
     </div>
   </footer>
 
