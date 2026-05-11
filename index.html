@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>北森建築 | 名張の暮らしに寄り添う建築</title>
-  <meta name="description" content="三重県名張市下三谷の北森建築。住まいの新築、改修、修繕まで、地域の暮らしに寄り添う建築会社のランディングページです。" />
+  <title>修理工房 名張店 | 直して、また使う。</title>
+  <meta name="description" content="三重県名張市栄町の修理工房 名張店。くつ、かばん、パソコン、合いかぎ、印鑑、時計電池交換まで。名張駅徒歩2分の修理店です。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,21 +12,21 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Zen Old Mincho"', '"Noto Serif JP"', 'serif']
+            display: ['"Noto Serif JP"', 'serif']
           },
           colors: {
-            ink: '#171615',
-            paper: '#f6f1e8',
-            chalk: '#fffdf8',
-            timber: '#8b5e36',
-            clay: '#b64f32',
-            leaf: '#556f55',
-            mist: '#d8ddcf',
-            night: '#24231f'
+            ink: '#171512',
+            paper: '#f8f4ec',
+            chalk: '#fffaf0',
+            vermilion: '#b9322a',
+            brass: '#b4884b',
+            bottle: '#22433a',
+            smoke: '#e7e1d4',
+            coal: '#211f1a'
           },
           boxShadow: {
-            soft: '0 24px 80px rgba(23, 22, 21, .12)',
-            deep: '0 36px 120px rgba(23, 22, 21, .22)'
+            soft: '0 24px 80px rgba(23, 21, 18, .12)',
+            deep: '0 36px 120px rgba(23, 21, 18, .22)'
           }
         }
       }
@@ -34,21 +34,21 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
-      color: #171615;
+      color: #171512;
       background:
-        linear-gradient(116deg, rgba(216, 221, 207, .72) 0 31%, transparent 31% 100%),
-        radial-gradient(circle at 91% 9%, rgba(182, 79, 50, .14), transparent 27%),
-        linear-gradient(180deg, #f6f1e8 0%, #fffdf8 45%, #eef1e7 100%);
+        linear-gradient(112deg, rgba(180, 136, 75, .16) 0 28%, transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(185, 50, 42, .18), transparent 25%),
+        linear-gradient(180deg, #f8f4ec 0%, #fffaf0 48%, #ede7da 100%);
     }
     .tight { letter-spacing: -.075em; }
-    .wide { letter-spacing: .2em; }
-    .copy { line-height: 2.05; }
+    .wide { letter-spacing: .18em; }
+    .copy { line-height: 2.08; }
     .glass {
-      background: rgba(255, 253, 248, .68);
+      background: rgba(255, 250, 240, .72);
       backdrop-filter: blur(22px);
       -webkit-backdrop-filter: blur(22px);
     }
@@ -61,27 +61,27 @@
       opacity: 1;
       transform: translateY(0);
     }
-    .hero-image {
+    .hero-photo {
       background-image:
-        linear-gradient(180deg, rgba(23, 22, 21, .04), rgba(23, 22, 21, .38)),
-        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=82");
-      background-size: cover;
+        linear-gradient(180deg, rgba(23, 21, 18, .05), rgba(23, 21, 18, .36)),
+        url("https://image.ekiten.jp/shop/40908905/2492177_20170516121815.jpg");
       background-position: center;
+      background-size: cover;
     }
     .masonry {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
-      grid-auto-rows: 86px;
+      grid-auto-rows: 82px;
       gap: 16px;
     }
     .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 6; }
-    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 36px; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 34px; }
     .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 5; }
     .masonry figure:nth-child(4) { grid-column: span 3; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -24px; }
+    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -22px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #f6f1e8 0%, #fffdf8 52%, #eef1e7 100%); }
+      body { background: linear-gradient(180deg, #f8f4ec 0%, #fffaf0 54%, #ede7da 100%); }
       .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 96px; gap: 12px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
@@ -89,87 +89,87 @@
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-clay selection:text-white">
+<body class="font-sans antialiased selection:bg-vermilion selection:text-white">
   <header class="glass fixed inset-x-0 top-0 z-50 border-b border-white/70">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="北森建築 ホーム">
-        <span class="grid h-11 w-11 place-items-center rounded-lg bg-night font-display text-lg font-black text-paper shadow-soft">北</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="修理工房 名張店 ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-lg bg-vermilion font-display text-lg font-black text-chalk shadow-soft">修</span>
         <span class="leading-none">
-          <span class="block text-base font-black tracking-[-.06em] md:text-lg">北森建築</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.28em] text-ink/45">nabari / home building</span>
+          <span class="block text-base font-black tracking-[-.06em] md:text-lg">修理工房 名張店</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.26em] text-ink/45">repair studio nabari</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.18em] text-ink/54 md:flex">
+      <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.16em] text-ink/54 md:flex">
         <a class="transition hover:text-ink" href="#about">About</a>
         <a class="transition hover:text-ink" href="#service">Service</a>
         <a class="transition hover:text-ink" href="#voice">Voice</a>
         <a class="transition hover:text-ink" href="#gallery">Gallery</a>
         <a class="transition hover:text-ink" href="#access">Access</a>
       </nav>
-      <a href="tel:0595-63-2969" class="rounded-lg bg-night px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-clay">Call</a>
+      <a href="tel:0595-63-8478" class="rounded-lg bg-coal px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-vermilion">Call</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.04fr_.96fr] lg:py-20">
         <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-timber">Shimomitani, Nabari</p>
-          <h1 class="tight font-display text-[clamp(3.35rem,8vw,8.6rem)] font-black leading-[.91]">
-            暮らしに、<br>芯を通す。
+          <p class="mb-6 text-xs font-black uppercase wide text-vermilion">Nabari station west / 2 min walk</p>
+          <h1 class="tight font-display text-[clamp(3.35rem,8.4vw,8.8rem)] font-black leading-[.91]">
+            直して、<br>また使う。
           </h1>
           <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
             <p class="copy text-[15px] text-ink/66">
-              名張の土地、家族の時間、住まいの癖まで見つめる建築。新築も改修も、毎日の使いやすさから整えます。
+              くつ、かばん、パソコン、合いかぎ、時計電池交換まで。名張駅前で、毎日の「困った」をすばやく整えます。
             </p>
-            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-lg border border-ink px-7 text-xs font-black uppercase tracking-[.22em] transition hover:bg-ink hover:text-paper">相談する</a>
+            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-lg border border-ink px-7 text-xs font-black uppercase tracking-[.2em] transition hover:bg-ink hover:text-paper">行き方を見る</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <div class="hero-image absolute right-0 top-0 h-[74%] w-[82%] rounded-lg shadow-deep"></div>
-          <img class="absolute bottom-6 left-0 h-[42%] w-[57%] rounded-lg border-8 border-paper object-cover shadow-deep" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=82" alt="木の住まいのイメージ">
-          <div class="absolute bottom-24 right-6 hidden rounded-lg bg-chalk/88 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-black tracking-[-.04em]">Local</p>
-            <p class="text-[10px] font-black uppercase tracking-[.28em] text-ink/46">builder in nabari</p>
+          <div class="hero-photo absolute right-0 top-0 h-[76%] w-[82%] rounded-lg shadow-deep"></div>
+          <img class="absolute bottom-8 left-0 h-[40%] w-[58%] rounded-lg border-8 border-paper object-cover shadow-deep" src="https://syurikoubo.1web.jp/img/1685078878418.webp" alt="修理工房の作業・店内写真">
+          <div class="absolute bottom-24 right-5 hidden rounded-lg bg-chalk/88 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
+            <p class="font-display text-4xl font-black tracking-[-.04em]">10:00-18:30</p>
+            <p class="text-[10px] font-black uppercase tracking-[.25em] text-ink/46">closed mon / thu</p>
           </div>
-          <p class="absolute left-2 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">new build / renovation / repair</p>
+          <p class="absolute left-1 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">shoes / bags / pc / keys / stamps</p>
         </div>
       </div>
     </section>
 
     <section id="about" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.84fr_1.16fr]">
+      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.86fr_1.14fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-leaf">About</p>
-          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">建てる前に、<br>暮らしを聞く。</h2>
+          <p class="mb-4 text-xs font-black uppercase wide text-bottle">About</p>
+          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">捨てる前に、<br>一度見せる。</h2>
           <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
-            北森建築は、三重県名張市下三谷にある建築会社です。住まいの工事は、図面や材料だけでは終わりません。動線、日当たり、家族の距離感、将来の手入れまで含めて、長く使えるかたちを考えます。
+            修理工房 名張店は、三重県名張市栄町の駅前ビル1Fにある修理店。気に入ったものを、できるだけ長く使えるように。相談しやすい距離と、わかりやすい料金で応えます。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
           <article class="rounded-lg bg-chalk/90 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-timber">Company</p>
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-vermilion">Shop</p>
             <dl class="space-y-4 text-sm leading-relaxed text-ink/68">
-              <div><dt class="font-black text-ink">名称</dt><dd>北森建築</dd></div>
-              <div><dt class="font-black text-ink">所在地</dt><dd>三重県名張市下三谷496</dd></div>
-              <div><dt class="font-black text-ink">電話</dt><dd><a class="underline decoration-ink/20 underline-offset-4" href="tel:0595-63-2969">0595-63-2969</a></dd></div>
-              <div><dt class="font-black text-ink">分野</dt><dd>建設・建築・設備・住宅</dd></div>
+              <div><dt class="font-black text-ink">店舗名</dt><dd>修理工房 名張店</dd></div>
+              <div><dt class="font-black text-ink">所在地</dt><dd>三重県名張市栄町2935-25 駅前ビル1F</dd></div>
+              <div><dt class="font-black text-ink">電話</dt><dd><a class="underline decoration-ink/20 underline-offset-4" href="tel:0595-63-8478">0595-63-8478</a></dd></div>
+              <div><dt class="font-black text-ink">アクセス</dt><dd>名張駅から徒歩2分</dd></div>
             </dl>
           </article>
-          <article class="translate-y-10 rounded-lg bg-night p-8 text-paper shadow-deep md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-mist">Benefit</p>
+          <article class="translate-y-10 rounded-lg bg-coal p-8 text-paper shadow-deep md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-smoke">Benefit</p>
             <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
-              <li>地域の気候と敷地に合わせて考える</li>
-              <li>小さな不便を設計段階で減らす</li>
-              <li>修繕しやすい納まりを大切にする</li>
-              <li>相談から工事まで顔が見える距離で進める</li>
+              <li>駅前だから、預ける・受け取るが早い</li>
+              <li>くつ、かばん、PC、小物までまとめて相談</li>
+              <li>見積り無料のパソコン修理に対応</li>
+              <li>買い替え前の選択肢を増やせる</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-lg bg-mist shadow-deep md:col-span-2 md:mt-12">
-            <img class="h-[390px] w-full object-cover opacity-95" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=82" alt="建築図面と木材のイメージ">
+          <div class="relative overflow-hidden rounded-lg bg-smoke shadow-deep md:col-span-2 md:mt-12">
+            <img class="h-[390px] w-full object-cover opacity-95" src="https://picsum.photos/seed/repair-bench/1400/720" alt="修理作業台のイメージ">
             <div class="absolute bottom-6 left-6 max-w-xs rounded-lg bg-chalk/90 p-5 shadow-soft backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-timber">Promise</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">見た目だけでなく、毎日が楽になる家へ。</p>
+              <p class="text-xs font-black uppercase wide text-vermilion">Promise</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">直るかどうか、まずは相談から。</p>
             </div>
           </div>
         </div>
@@ -180,33 +180,33 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[.72fr_1.28fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-timber">Service</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">困りごとを、<br>骨組みから。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Service</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">困ったを、<br>一箇所で。</h2>
           </div>
           <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            家の悩みは一つに見えて、構造、設備、生活動線が重なっています。必要な工事を見極め、過不足なく進めます。
+            毎日の道具は、少し直せばまだ使えるものが多い。専門店に持ち込む前の、小さく確かな修理窓口です。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-4">
           <article class="rounded-lg bg-chalk p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-leaf">01</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">新築</h3>
-            <p class="copy mt-4 text-sm text-ink/62">敷地条件と暮らし方から、無理のない住まいを組み立てます。</p>
+            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">01</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">くつ修理</h3>
+            <p class="copy mt-4 text-sm text-ink/62">カカトゴム交換、ヒールカット、サイズ調整などに対応。</p>
           </article>
-          <article class="rounded-lg bg-night p-7 text-paper shadow-deep md:translate-y-10">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-mist">02</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">リフォーム</h3>
-            <p class="copy mt-4 text-sm text-paper/66">古くなった場所を直すだけでなく、使いやすさを更新します。</p>
+          <article class="rounded-lg bg-coal p-7 text-paper shadow-deep md:translate-y-10">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-smoke">02</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">かばん修理</h3>
+            <p class="copy mt-4 text-sm text-paper/66">糸ほつれ、持ち手調整、ファスナー交換などを相談できます。</p>
           </article>
           <article class="rounded-lg bg-chalk p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-leaf">03</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">修繕</h3>
-            <p class="copy mt-4 text-sm text-ink/62">雨まわり、内装、建具など、日々の不具合を早めに整えます。</p>
+            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">03</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">パソコン修理</h3>
+            <p class="copy mt-4 text-sm text-ink/62">動作不良、初期設定、液晶・キーボード交換、ウイルス駆除。</p>
           </article>
           <article class="rounded-lg bg-chalk p-7 shadow-soft md:translate-y-6">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-leaf">04</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">設備相談</h3>
-            <p class="copy mt-4 text-sm text-ink/62">水まわりや断熱など、暮らしの快適さに直結する部分を見直します。</p>
+            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">04</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">合いかぎ・印鑑</h3>
+            <p class="copy mt-4 text-sm text-ink/62">時計電池交換、表札、ネームプレート、トロフィー販売も。</p>
           </article>
         </div>
       </div>
@@ -216,35 +216,35 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-clay">Reviews</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">頼れる理由は、<br>話が早いこと。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Reviews</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">駅前で、<br>すぐ頼れる。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-ink/62">公開レビューは確認できなかったため、地域の建築相談で想定される声として構成しています。</p>
+          <p class="copy max-w-md text-sm text-ink/62">公開レビュー本文は確認できなかったため、店舗情報に基づく想定レビューとして構成しています。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
           <article class="rounded-lg bg-chalk p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">改修相談</span>
-              <span class="font-display text-4xl font-black text-timber">01</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-bottle">くつ修理</span>
+              <span class="font-display text-4xl font-black text-brass">01</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">生活しながら直す順番が見えた</p>
-            <p class="copy mt-5 text-sm text-ink/64">急ぐ場所と後でよい場所を分けて説明してもらい、予算の考え方も整理できました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">買い替える前に直せて助かった</p>
+            <p class="copy mt-5 text-sm text-ink/64">駅前で預けやすく、かかとの減りもきれいに整いました。お気に入りの靴をまた履けます。</p>
           </article>
-          <article class="rounded-lg bg-night p-8 text-paper shadow-deep md:translate-y-10">
+          <article class="rounded-lg bg-coal p-8 text-paper shadow-deep md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-mist">水まわり</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-smoke">PC相談</span>
               <span class="font-display text-4xl font-black text-paper">02</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">小さな不便まで聞いてくれた</p>
-            <p class="copy mt-5 text-sm text-paper/66">毎日使う場所だからこそ、掃除や収納まで含めて提案してもらえたのが助かりました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">見積り無料で相談しやすい</p>
+            <p class="copy mt-5 text-sm text-paper/66">動作が遅くなったパソコンを見てもらい、必要な作業がわかって安心できました。</p>
           </article>
           <article class="rounded-lg bg-chalk p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-leaf">住まいの修繕</span>
-              <span class="font-display text-4xl font-black text-timber">03</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-bottle">合いかぎ</span>
+              <span class="font-display text-4xl font-black text-brass">03</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">原因から見てくれる安心感</p>
-            <p class="copy mt-5 text-sm text-ink/64">表面だけでなく、なぜ傷んだのかを見てもらえたので、次の手入れも考えやすくなりました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">用事のついでに寄れる</p>
+            <p class="copy mt-5 text-sm text-ink/64">名張駅の近くなので、買い物や通勤の途中に寄れるのが便利。小物の相談もしやすいです。</p>
           </article>
         </div>
       </div>
@@ -254,29 +254,29 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[1fr_.8fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-timber">Gallery</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">木と光で、<br>暮らしを整える。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Gallery</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">手の跡が、<br>信頼になる。</h2>
           </div>
-          <p class="copy text-[15px] text-ink/62">プレビューで確実に表示される安定URLの建築イメージを使用。公開写真が確認でき次第、実際の施工・外観写真へ差し替えできます。</p>
+          <p class="copy text-[15px] text-ink/62">公式サイトとポータル掲載で確認できた店舗写真を中心に構成。実店舗の赤いファサードと修理メニューが、初めての来店でも目印になります。</p>
         </div>
         <div class="masonry">
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=900&q=82" alt="木造住宅外観のイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://image.ekiten.jp/shop/40908905/2492177_20170516121815.jpg" alt="修理工房 名張店の外観">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=82" alt="木の内装と自然光のイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078878418.webp" alt="修理工房の写真1">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=82" alt="大工仕事の手元のイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078901892.webp" alt="修理工房の写真2">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=82" alt="リフォーム後のキッチンのイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078923551.webp" alt="修理工房の写真3">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=760&q=82" alt="木材の質感のイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/11685077232233.webp" alt="修理工房の写真4">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-mist shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1100&q=82" alt="名張の住宅地のイメージ">
+          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/11685077232937.webp" alt="修理工房の写真5">
           </figure>
         </div>
       </div>
@@ -284,23 +284,23 @@
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-stretch">
-        <div class="rounded-lg bg-night p-8 text-paper shadow-deep md:p-10">
-          <p class="mb-4 text-xs font-black uppercase wide text-mist">Access</p>
-          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">相談は、<br>下三谷へ。</h2>
+        <div class="rounded-lg bg-coal p-8 text-paper shadow-deep md:p-10">
+          <p class="mb-4 text-xs font-black uppercase wide text-smoke">Access</p>
+          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">名張駅から、<br>徒歩2分。</h2>
           <p class="copy mt-8 text-[15px] text-paper/68">
-            名張駅から車でアクセスしやすい下三谷エリア。住まいの新築、改修、修繕、設備の相談まで、まずは電話で状況をお聞かせください。
+            駅前ビル1F、名張郵便局方面。赤い看板が目印です。修理できるか迷うものも、まずは電話で状況をお聞かせください。
           </p>
           <dl class="mt-10 grid gap-5 text-sm leading-relaxed text-paper/78 sm:grid-cols-2">
-            <div><dt class="font-black text-paper">住所</dt><dd>〒518-0737<br>三重県名張市下三谷496</dd></div>
-            <div><dt class="font-black text-paper">電話</dt><dd><a class="underline decoration-paper/30 underline-offset-4" href="tel:0595-63-2969">0595-63-2969</a></dd></div>
-            <div><dt class="font-black text-paper">最寄り</dt><dd>名張駅から約2.7km</dd></div>
-            <div><dt class="font-black text-paper">相談内容</dt><dd>新築・改修・修繕・住宅設備</dd></div>
+            <div><dt class="font-black text-paper">住所</dt><dd>〒518-0719<br>三重県名張市栄町2935-25 駅前ビル1F</dd></div>
+            <div><dt class="font-black text-paper">電話</dt><dd><a class="underline decoration-paper/30 underline-offset-4" href="tel:0595-63-8478">0595-63-8478</a></dd></div>
+            <div><dt class="font-black text-paper">営業時間</dt><dd>10:00-18:30</dd></div>
+            <div><dt class="font-black text-paper">定休日</dt><dd>月曜日・木曜日</dd></div>
           </dl>
         </div>
-        <div class="min-h-[520px] overflow-hidden rounded-lg bg-mist shadow-deep">
+        <div class="min-h-[520px] overflow-hidden rounded-lg bg-smoke shadow-deep">
           <iframe
-            title="北森建築 Google Map"
-            src="https://maps.google.com/maps?q=%E5%8C%97%E6%A3%AE%E5%BB%BA%E7%AF%89%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%90%8D%E5%BC%B5%E5%B8%82%E4%B8%8B%E4%B8%89%E8%B0%B7496&z=17&output=embed"
+            title="修理工房 名張店 Google Map"
+            src="https://maps.google.com/maps?q=%E4%BF%AE%E7%90%86%E5%B7%A5%E6%88%BF%20%E5%90%8D%E5%BC%B5%E5%B8%82%E6%A0%84%E7%94%BA2935-25&z=17&output=embed"
             class="h-full min-h-[520px] w-full border-0"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -311,8 +311,8 @@
 
   <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
-      <p>Copyright © 北森建築</p>
-      <p>Building / Renovation / Repair</p>
+      <p>Copyright © 修理工房 名張店</p>
+      <p>Shoes / Bags / PC / Keys / Stamps</p>
     </div>
   </footer>
 
