@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>修理工房 名張店 | 直して、また使う。</title>
-  <meta name="description" content="三重県名張市栄町の修理工房 名張店。くつ、かばん、パソコン、合いかぎ、印鑑、時計電池交換まで。名張駅徒歩2分の修理店です。" />
+  <title>株式会社青山自動車整備工場 | 伊賀・青山町の車検と整備</title>
+  <meta name="description" content="三重県伊賀市阿保の株式会社青山自動車整備工場。新車・中古車、車検、一般整備、板金塗装、次世代車対応まで。地域のカーライフを支える整備工場です。" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,21 +12,21 @@
         extend: {
           fontFamily: {
             sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['"Noto Serif JP"', 'serif']
+            display: ['"Archivo"', '"Noto Sans JP"', 'ui-sans-serif', 'system-ui', 'sans-serif']
           },
           colors: {
-            ink: '#171512',
-            paper: '#f8f4ec',
-            chalk: '#fffaf0',
-            vermilion: '#b9322a',
-            brass: '#b4884b',
-            bottle: '#22433a',
-            smoke: '#e7e1d4',
-            coal: '#211f1a'
+            ink: '#151719',
+            steel: '#2f3d46',
+            fog: '#f4f2ed',
+            paper: '#fffdf7',
+            signal: '#e23d28',
+            moss: '#59684d',
+            line: '#d8d4ca',
+            graphite: '#23282c'
           },
           boxShadow: {
-            soft: '0 24px 80px rgba(23, 21, 18, .12)',
-            deep: '0 36px 120px rgba(23, 21, 18, .22)'
+            soft: '0 24px 70px rgba(21, 23, 25, .10)',
+            hard: '0 34px 110px rgba(21, 23, 25, .22)'
           }
         }
       }
@@ -34,28 +34,27 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     body {
-      color: #171512;
       background:
-        linear-gradient(112deg, rgba(180, 136, 75, .16) 0 28%, transparent 28%),
-        radial-gradient(circle at 88% 12%, rgba(185, 50, 42, .18), transparent 25%),
-        linear-gradient(180deg, #f8f4ec 0%, #fffaf0 48%, #ede7da 100%);
+        linear-gradient(125deg, rgba(226, 61, 40, .08) 0 24%, transparent 24%),
+        linear-gradient(180deg, #f4f2ed 0%, #fffdf7 44%, #ebe7dc 100%);
+      color: #151719;
     }
-    .tight { letter-spacing: -.075em; }
+    .tight { letter-spacing: -.07em; }
+    .copy { line-height: 2.05; }
     .wide { letter-spacing: .18em; }
-    .copy { line-height: 2.08; }
     .glass {
-      background: rgba(255, 250, 240, .72);
+      background: rgba(255, 253, 247, .72);
       backdrop-filter: blur(22px);
       -webkit-backdrop-filter: blur(22px);
     }
     .reveal {
       opacity: 0;
-      transform: translateY(44px);
-      transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
+      transform: translateY(42px);
+      transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1);
     }
     .reveal.is-visible {
       opacity: 1;
@@ -63,10 +62,16 @@
     }
     .hero-photo {
       background-image:
-        linear-gradient(180deg, rgba(23, 21, 18, .05), rgba(23, 21, 18, .36)),
-        url("https://image.ekiten.jp/shop/40908905/2492177_20170516121815.jpg");
+        linear-gradient(180deg, rgba(21, 23, 25, .04), rgba(21, 23, 25, .40)),
+        url("https://www.lotas.co.jp/shop/mie/44014-1.jpg");
       background-position: center;
       background-size: cover;
+    }
+    .grid-mask {
+      background-image:
+        linear-gradient(rgba(21, 23, 25, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(21, 23, 25, .08) 1px, transparent 1px);
+      background-size: 42px 42px;
     }
     .masonry {
       display: grid;
@@ -74,139 +79,143 @@
       grid-auto-rows: 82px;
       gap: 16px;
     }
-    .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 6; }
-    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 34px; }
-    .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 5; }
+    .masonry figure:nth-child(1) { grid-column: span 2; grid-row: span 5; }
+    .masonry figure:nth-child(2) { grid-column: span 2; grid-row: span 4; margin-top: 38px; }
+    .masonry figure:nth-child(3) { grid-column: span 2; grid-row: span 6; }
     .masonry figure:nth-child(4) { grid-column: span 3; grid-row: span 4; }
-    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 5; margin-top: -22px; }
+    .masonry figure:nth-child(5) { grid-column: span 1; grid-row: span 4; margin-top: -20px; }
     .masonry figure:nth-child(6) { grid-column: span 2; grid-row: span 3; }
     @media (max-width: 768px) {
-      body { background: linear-gradient(180deg, #f8f4ec 0%, #fffaf0 54%, #ede7da 100%); }
-      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 96px; gap: 12px; }
+      body { background: linear-gradient(180deg, #f4f2ed 0%, #fffdf7 52%, #ebe7dc 100%); }
+      .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 92px; gap: 12px; }
       .masonry figure { grid-column: span 1 !important; grid-row: span 3 !important; margin-top: 0 !important; }
       .masonry figure:nth-child(1),
+      .masonry figure:nth-child(3),
       .masonry figure:nth-child(4) { grid-column: span 2 !important; }
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-vermilion selection:text-white">
+<body class="font-sans antialiased selection:bg-signal selection:text-white">
   <header class="glass fixed inset-x-0 top-0 z-50 border-b border-white/70">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="修理工房 名張店 ホーム">
-        <span class="grid h-11 w-11 place-items-center rounded-lg bg-vermilion font-display text-lg font-black text-chalk shadow-soft">修</span>
+      <a href="#top" class="flex items-center gap-3" aria-label="株式会社青山自動車整備工場 ホーム">
+        <span class="grid h-11 w-11 place-items-center rounded-md bg-ink text-sm font-black text-paper shadow-soft">A</span>
         <span class="leading-none">
-          <span class="block text-base font-black tracking-[-.06em] md:text-lg">修理工房 名張店</span>
-          <span class="block text-[10px] font-black uppercase tracking-[.26em] text-ink/45">repair studio nabari</span>
+          <span class="block text-base font-black tracking-[-.06em] md:text-lg">青山自動車整備工場</span>
+          <span class="block text-[10px] font-black uppercase tracking-[.25em] text-ink/45">iga aoyama motor works</span>
         </span>
       </a>
       <nav class="hidden items-center gap-8 text-xs font-black uppercase tracking-[.16em] text-ink/54 md:flex">
         <a class="transition hover:text-ink" href="#about">About</a>
-        <a class="transition hover:text-ink" href="#service">Service</a>
+        <a class="transition hover:text-ink" href="#benefit">Care</a>
         <a class="transition hover:text-ink" href="#voice">Voice</a>
         <a class="transition hover:text-ink" href="#gallery">Gallery</a>
         <a class="transition hover:text-ink" href="#access">Access</a>
       </nav>
-      <a href="tel:0595-63-8478" class="rounded-lg bg-coal px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-paper transition hover:bg-vermilion">Call</a>
+      <a href="tel:0595-52-1155" class="rounded-md bg-signal px-5 py-3 text-xs font-black uppercase tracking-[.16em] text-white transition hover:bg-ink">Call</a>
     </div>
   </header>
 
   <main id="top">
     <section class="relative min-h-screen overflow-hidden px-5 pt-28 lg:px-8">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.04fr_.96fr] lg:py-20">
-        <div class="relative z-10">
-          <p class="mb-6 text-xs font-black uppercase wide text-vermilion">Nabari station west / 2 min walk</p>
-          <h1 class="tight font-display text-[clamp(3.35rem,8.4vw,8.8rem)] font-black leading-[.91]">
-            直して、<br>また使う。
+      <div class="grid-mask absolute inset-0 opacity-40"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 py-16 lg:grid-cols-[1.06fr_.94fr] lg:py-20">
+        <div class="z-10">
+          <p class="mb-6 text-xs font-black uppercase wide text-signal">Iga / Aoyamacho / since local trust</p>
+          <h1 class="tight font-display text-[clamp(3.35rem,8.8vw,9.4rem)] font-black leading-[.88]">
+            走る毎日を、<br>止めない。
           </h1>
           <div class="mt-10 grid max-w-2xl gap-6 border-l border-ink/20 pl-6 md:grid-cols-[1fr_auto] md:items-end">
             <p class="copy text-[15px] text-ink/66">
-              くつ、かばん、パソコン、合いかぎ、時計電池交換まで。名張駅前で、毎日の「困った」をすばやく整えます。
+              車検、整備、板金塗装、新車・中古車まで。伊賀・青山町で、いつもの車をいつもの安心へ整えます。
             </p>
-            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-lg border border-ink px-7 text-xs font-black uppercase tracking-[.2em] transition hover:bg-ink hover:text-paper">行き方を見る</a>
+            <a href="#access" class="inline-flex h-14 items-center justify-center rounded-md border border-ink px-7 text-xs font-black uppercase tracking-[.2em] transition hover:bg-ink hover:text-paper">Access</a>
           </div>
         </div>
         <div class="relative min-h-[590px]">
-          <div class="hero-photo absolute right-0 top-0 h-[76%] w-[82%] rounded-lg shadow-deep"></div>
-          <img class="absolute bottom-8 left-0 h-[40%] w-[58%] rounded-lg border-8 border-paper object-cover shadow-deep" src="https://syurikoubo.1web.jp/img/1685078878418.webp" alt="修理工房の作業・店内写真">
-          <div class="absolute bottom-24 right-5 hidden rounded-lg bg-chalk/88 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
-            <p class="font-display text-4xl font-black tracking-[-.04em]">10:00-18:30</p>
-            <p class="text-[10px] font-black uppercase tracking-[.25em] text-ink/46">closed mon / thu</p>
+          <div class="hero-photo absolute right-0 top-0 h-[76%] w-[82%] rounded-md shadow-hard"></div>
+          <img class="absolute bottom-8 left-0 h-[39%] w-[58%] rounded-md border-8 border-fog object-cover shadow-hard" src="https://www.lotas.co.jp/shop/mie/44014-2.jpg" alt="株式会社青山自動車整備工場のスタッフ写真">
+          <div class="absolute bottom-24 right-5 hidden rounded-md bg-paper/90 px-5 py-4 text-right shadow-soft backdrop-blur md:block">
+            <p class="font-display text-4xl font-black tracking-[-.05em]">8:00-18:00</p>
+            <p class="text-[10px] font-black uppercase tracking-[.25em] text-ink/46">closed sun / holidays</p>
           </div>
-          <p class="absolute left-1 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">shoes / bags / pc / keys / stamps</p>
+          <p class="absolute left-1 top-12 hidden [writing-mode:vertical-rl] text-xs font-black uppercase tracking-[.18em] text-ink/35 lg:block">inspection / maintenance / body repair</p>
         </div>
       </div>
     </section>
 
     <section id="about" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.86fr_1.14fr]">
+      <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[.88fr_1.12fr]">
         <div class="lg:pt-16">
-          <p class="mb-4 text-xs font-black uppercase wide text-bottle">About</p>
-          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">捨てる前に、<br>一度見せる。</h2>
+          <p class="mb-4 text-xs font-black uppercase wide text-moss">About</p>
+          <h2 class="tight font-display text-5xl font-black leading-[.96] md:text-7xl">地元の道を、<br>知る工場。</h2>
           <p class="copy mt-8 max-w-md text-[15px] text-ink/64">
-            修理工房 名張店は、三重県名張市栄町の駅前ビル1Fにある修理店。気に入ったものを、できるだけ長く使えるように。相談しやすい距離と、わかりやすい料金で応えます。
+            株式会社青山自動車整備工場は、三重県伊賀市阿保の自動車整備工場。LOTAS加盟店として、車検、一般整備、板金塗装、新車・中古車の相談まで幅広く対応します。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded-lg bg-chalk/90 p-8 shadow-soft">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-vermilion">Shop</p>
+          <article class="rounded-md bg-paper/92 p-8 shadow-soft">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-signal">Profile</p>
             <dl class="space-y-4 text-sm leading-relaxed text-ink/68">
-              <div><dt class="font-black text-ink">店舗名</dt><dd>修理工房 名張店</dd></div>
-              <div><dt class="font-black text-ink">所在地</dt><dd>三重県名張市栄町2935-25 駅前ビル1F</dd></div>
-              <div><dt class="font-black text-ink">電話</dt><dd><a class="underline decoration-ink/20 underline-offset-4" href="tel:0595-63-8478">0595-63-8478</a></dd></div>
-              <div><dt class="font-black text-ink">アクセス</dt><dd>名張駅から徒歩2分</dd></div>
+              <div><dt class="font-black text-ink">会社名</dt><dd>株式会社青山自動車整備工場</dd></div>
+              <div><dt class="font-black text-ink">所在地</dt><dd>三重県伊賀市阿保891</dd></div>
+              <div><dt class="font-black text-ink">電話</dt><dd><a class="underline decoration-ink/20 underline-offset-4" href="tel:0595-52-1155">0595-52-1155</a></dd></div>
+              <div><dt class="font-black text-ink">営業時間</dt><dd>8:00-18:00</dd></div>
+              <div><dt class="font-black text-ink">定休日</dt><dd>日曜・祝日・第2第4土曜</dd></div>
             </dl>
           </article>
-          <article class="translate-y-10 rounded-lg bg-coal p-8 text-paper shadow-deep md:translate-y-16">
-            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-smoke">Benefit</p>
+          <article class="translate-y-10 rounded-md bg-graphite p-8 text-paper shadow-hard md:translate-y-16">
+            <p class="mb-6 text-sm font-black uppercase tracking-[.18em] text-paper/60">Works</p>
             <ul class="space-y-4 text-[15px] leading-relaxed text-paper/76">
-              <li>駅前だから、預ける・受け取るが早い</li>
-              <li>くつ、かばん、PC、小物までまとめて相談</li>
-              <li>見積り無料のパソコン修理に対応</li>
-              <li>買い替え前の選択肢を増やせる</li>
+              <li>新車・中古車の相談</li>
+              <li>車検と定期点検</li>
+              <li>一般整備と故障診断</li>
+              <li>板金塗装、外装まわり</li>
+              <li>ハイブリッド・EVなど次世代車対応</li>
             </ul>
           </article>
-          <div class="relative overflow-hidden rounded-lg bg-smoke shadow-deep md:col-span-2 md:mt-12">
-            <img class="h-[390px] w-full object-cover opacity-95" src="https://picsum.photos/seed/repair-bench/1400/720" alt="修理作業台のイメージ">
-            <div class="absolute bottom-6 left-6 max-w-xs rounded-lg bg-chalk/90 p-5 shadow-soft backdrop-blur">
-              <p class="text-xs font-black uppercase wide text-vermilion">Promise</p>
-              <p class="mt-3 text-xl font-black tracking-[-.04em]">直るかどうか、まずは相談から。</p>
+          <div class="relative overflow-hidden rounded-md bg-line shadow-hard md:col-span-2 md:mt-12">
+            <img class="h-[390px] w-full object-cover opacity-95" src="https://picsum.photos/seed/aoyama-garage-tools/1400/720" alt="整備工具とガレージのイメージ">
+            <div class="absolute bottom-6 left-6 max-w-xs rounded-md bg-paper/92 p-5 shadow-soft backdrop-blur">
+              <p class="text-xs font-black uppercase wide text-signal">Promise</p>
+              <p class="mt-3 text-xl font-black tracking-[-.04em]">任せたい理由を、整備品質でつくる。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="service" class="reveal px-5 py-24 lg:px-8">
+    <section id="benefit" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 grid gap-8 md:grid-cols-[.72fr_1.28fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Service</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">困ったを、<br>一箇所で。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-signal">Care</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">点検で、<br>差が出る。</h2>
           </div>
           <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
-            毎日の道具は、少し直せばまだ使えるものが多い。専門店に持ち込む前の、小さく確かな修理窓口です。
+            早めに見つける。必要な作業だけを選ぶ。日々の通勤、送迎、週末の移動まで、車を止めないための整備です。
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-4">
-          <article class="rounded-lg bg-chalk p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">01</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">くつ修理</h3>
-            <p class="copy mt-4 text-sm text-ink/62">カカトゴム交換、ヒールカット、サイズ調整などに対応。</p>
+          <article class="rounded-md bg-paper p-7 shadow-soft">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">01</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">車検</h3>
+            <p class="copy mt-4 text-sm text-ink/62">期限前の準備から点検、必要整備まで一貫して相談できます。</p>
           </article>
-          <article class="rounded-lg bg-coal p-7 text-paper shadow-deep md:translate-y-10">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-smoke">02</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">かばん修理</h3>
-            <p class="copy mt-4 text-sm text-paper/66">糸ほつれ、持ち手調整、ファスナー交換などを相談できます。</p>
+          <article class="rounded-md bg-graphite p-7 text-paper shadow-hard md:translate-y-10">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-paper/55">02</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">一般整備</h3>
+            <p class="copy mt-4 text-sm text-paper/66">異音、警告灯、オイル、タイヤ、ブレーキまで日常の不安を点検。</p>
           </article>
-          <article class="rounded-lg bg-chalk p-7 shadow-soft">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">03</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">パソコン修理</h3>
-            <p class="copy mt-4 text-sm text-ink/62">動作不良、初期設定、液晶・キーボード交換、ウイルス駆除。</p>
+          <article class="rounded-md bg-paper p-7 shadow-soft">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">03</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">板金塗装</h3>
+            <p class="copy mt-4 text-sm text-ink/62">小さな傷から外装修理まで、見た目と安全性を整えます。</p>
           </article>
-          <article class="rounded-lg bg-chalk p-7 shadow-soft md:translate-y-6">
-            <p class="text-xs font-black uppercase tracking-[.22em] text-bottle">04</p>
-            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">合いかぎ・印鑑</h3>
-            <p class="copy mt-4 text-sm text-ink/62">時計電池交換、表札、ネームプレート、トロフィー販売も。</p>
+          <article class="rounded-md bg-paper p-7 shadow-soft md:translate-y-6">
+            <p class="text-xs font-black uppercase tracking-[.22em] text-moss">04</p>
+            <h3 class="mt-8 text-xl font-black tracking-[-.05em]">次世代車対応</h3>
+            <p class="copy mt-4 text-sm text-ink/62">LOTAS次世代自動車取扱認定店。HV・EVも相談しやすい体制です。</p>
           </article>
         </div>
       </div>
@@ -216,91 +225,94 @@
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Reviews</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">駅前で、<br>すぐ頼れる。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-signal">Reviews</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">相談が、<br>早い。</h2>
           </div>
-          <p class="copy max-w-md text-sm text-ink/62">公開レビュー本文は確認できなかったため、店舗情報に基づく想定レビューとして構成しています。</p>
+          <p class="copy max-w-md text-sm text-ink/62">Google/Yahoo上で公開レビュー本文を確認できなかったため、利用シーンに基づく架空レビューとして掲載しています。</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
-          <article class="rounded-lg bg-chalk p-8 shadow-soft">
+          <article class="rounded-md bg-paper p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-bottle">くつ修理</span>
-              <span class="font-display text-4xl font-black text-brass">01</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">車検</span>
+              <span class="font-display text-4xl font-black text-signal">01</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">買い替える前に直せて助かった</p>
-            <p class="copy mt-5 text-sm text-ink/64">駅前で預けやすく、かかとの減りもきれいに整いました。お気に入りの靴をまた履けます。</p>
+            <p class="text-lg font-black tracking-[-.04em]">説明が短く、要点がわかりやすい</p>
+            <p class="copy mt-5 text-sm text-ink/64">交換が必要な箇所と、次回でよい箇所を分けて話してくれたので、納得して任せられました。</p>
           </article>
-          <article class="rounded-lg bg-coal p-8 text-paper shadow-deep md:translate-y-10">
+          <article class="rounded-md bg-graphite p-8 text-paper shadow-hard md:translate-y-10">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-smoke">PC相談</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-paper/55">整備</span>
               <span class="font-display text-4xl font-black text-paper">02</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">見積り無料で相談しやすい</p>
-            <p class="copy mt-5 text-sm text-paper/66">動作が遅くなったパソコンを見てもらい、必要な作業がわかって安心できました。</p>
+            <p class="text-lg font-black tracking-[-.04em]">急な不調でも相談しやすい</p>
+            <p class="copy mt-5 text-sm text-paper/66">通勤で使う車なので早めに見てもらえて助かりました。地元に頼れる工場がある安心感があります。</p>
           </article>
-          <article class="rounded-lg bg-chalk p-8 shadow-soft">
+          <article class="rounded-md bg-paper p-8 shadow-soft">
             <div class="mb-8 flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-[.22em] text-bottle">合いかぎ</span>
-              <span class="font-display text-4xl font-black text-brass">03</span>
+              <span class="text-xs font-black uppercase tracking-[.22em] text-moss">板金</span>
+              <span class="font-display text-4xl font-black text-signal">03</span>
             </div>
-            <p class="text-lg font-black tracking-[-.04em]">用事のついでに寄れる</p>
-            <p class="copy mt-5 text-sm text-ink/64">名張駅の近くなので、買い物や通勤の途中に寄れるのが便利。小物の相談もしやすいです。</p>
+            <p class="text-lg font-black tracking-[-.04em]">小さな傷もきれいに整った</p>
+            <p class="copy mt-5 text-sm text-ink/64">駐車時につけた傷を相談。仕上がりの見た目も自然で、お願いしてよかったです。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="reveal overflow-hidden px-5 py-24 lg:px-8">
+    <section id="gallery" class="reveal px-5 py-24 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <div class="mb-12 grid gap-8 md:grid-cols-[1fr_.8fr] md:items-end">
+        <div class="mb-12 grid gap-8 md:grid-cols-[.9fr_1.1fr] md:items-end">
           <div>
-            <p class="mb-4 text-xs font-black uppercase wide text-vermilion">Gallery</p>
-            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">手の跡が、<br>信頼になる。</h2>
+            <p class="mb-4 text-xs font-black uppercase wide text-signal">Gallery</p>
+            <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">工場の顔。</h2>
           </div>
-          <p class="copy text-[15px] text-ink/62">公式サイトとポータル掲載で確認できた店舗写真を中心に構成。実店舗の赤いファサードと修理メニューが、初めての来店でも目印になります。</p>
+          <p class="copy max-w-xl text-[15px] text-ink/66 md:justify-self-end">
+            実店舗写真はLOTAS掲載画像を使用。補助カットはプレビューで確実に表示される絶対URLのプレースホルダーです。
+          </p>
         </div>
         <div class="masonry">
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://image.ekiten.jp/shop/40908905/2492177_20170516121815.jpg" alt="修理工房 名張店の外観">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://www.lotas.co.jp/shop/mie/44014-1.jpg" alt="株式会社青山自動車整備工場の外観">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078878418.webp" alt="修理工房の写真1">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/aoyama-inspection/900/700" alt="車検整備のイメージ">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078901892.webp" alt="修理工房の写真2">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-hard">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://www.lotas.co.jp/shop/mie/44014-2.jpg" alt="株式会社青山自動車整備工場のスタッフ">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/1685078923551.webp" alt="修理工房の写真3">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/aoyama-bodywork/1200/760" alt="板金塗装のイメージ">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-deep">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/11685077232233.webp" alt="修理工房の写真4">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/aoyama-tools/700/900" alt="整備工具のイメージ">
           </figure>
-          <figure class="group overflow-hidden rounded-lg bg-smoke shadow-soft">
-            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://syurikoubo.1web.jp/img/11685077232937.webp" alt="修理工房の写真5">
+          <figure class="group relative overflow-hidden rounded-md bg-line shadow-soft">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-105" src="https://picsum.photos/seed/aoyama-road/900/520" alt="伊賀の道路を走る車のイメージ">
           </figure>
         </div>
       </div>
     </section>
 
     <section id="access" class="reveal px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-stretch">
-        <div class="rounded-lg bg-coal p-8 text-paper shadow-deep md:p-10">
-          <p class="mb-4 text-xs font-black uppercase wide text-smoke">Access</p>
-          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">名張駅から、<br>徒歩2分。</h2>
-          <p class="copy mt-8 text-[15px] text-paper/68">
-            駅前ビル1F、名張郵便局方面。赤い看板が目印です。修理できるか迷うものも、まずは電話で状況をお聞かせください。
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.78fr_1.22fr] lg:items-stretch">
+        <div class="rounded-md bg-graphite p-8 text-paper shadow-hard md:p-10">
+          <p class="mb-4 text-xs font-black uppercase wide text-paper/55">Access</p>
+          <h2 class="tight font-display text-5xl font-black leading-none md:text-7xl">阿保891。</h2>
+          <p class="copy mt-8 text-sm text-paper/68">
+            青山町駅から徒歩約15分。車検や整備の相談は、営業時間内に電話で確認するとスムーズです。
           </p>
-          <dl class="mt-10 grid gap-5 text-sm leading-relaxed text-paper/78 sm:grid-cols-2">
-            <div><dt class="font-black text-paper">住所</dt><dd>〒518-0719<br>三重県名張市栄町2935-25 駅前ビル1F</dd></div>
-            <div><dt class="font-black text-paper">電話</dt><dd><a class="underline decoration-paper/30 underline-offset-4" href="tel:0595-63-8478">0595-63-8478</a></dd></div>
-            <div><dt class="font-black text-paper">営業時間</dt><dd>10:00-18:30</dd></div>
-            <div><dt class="font-black text-paper">定休日</dt><dd>月曜日・木曜日</dd></div>
-          </dl>
+          <div class="mt-10 space-y-5 text-sm leading-relaxed text-paper/75">
+            <p><span class="block text-xs font-black uppercase tracking-[.18em] text-paper/45">Address</span>三重県伊賀市阿保891</p>
+            <p><span class="block text-xs font-black uppercase tracking-[.18em] text-paper/45">Tel / Fax</span><a class="underline decoration-white/25 underline-offset-4" href="tel:0595-52-1155">0595-52-1155</a> / 0595-52-1157</p>
+            <p><span class="block text-xs font-black uppercase tracking-[.18em] text-paper/45">Hours</span>8:00-18:00</p>
+            <p><span class="block text-xs font-black uppercase tracking-[.18em] text-paper/45">Closed</span>日曜・祝日・第2第4土曜</p>
+          </div>
+          <a href="https://www.google.co.jp/maps/place/%EF%BC%88%E6%A0%AA%EF%BC%89%E9%9D%92%E5%B1%B1%E8%87%AA%E5%8B%95%E8%BB%8A%E6%95%B4%E5%82%99%E5%B7%A5%E5%A0%B4/@34.664304,136.175477,17z?hl=ja" class="mt-10 inline-flex h-14 items-center rounded-md bg-paper px-7 text-xs font-black uppercase tracking-[.18em] text-ink transition hover:bg-signal hover:text-white">Google Maps</a>
         </div>
-        <div class="min-h-[520px] overflow-hidden rounded-lg bg-smoke shadow-deep">
+        <div class="min-h-[520px] overflow-hidden rounded-md bg-line shadow-hard">
           <iframe
-            title="修理工房 名張店 Google Map"
-            src="https://maps.google.com/maps?q=%E4%BF%AE%E7%90%86%E5%B7%A5%E6%88%BF%20%E5%90%8D%E5%BC%B5%E5%B8%82%E6%A0%84%E7%94%BA2935-25&z=17&output=embed"
+            title="株式会社青山自動車整備工場のGoogleマップ"
+            src="https://www.google.com/maps?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E9%9D%92%E5%B1%B1%E8%87%AA%E5%8B%95%E8%BB%8A%E6%95%B4%E5%82%99%E5%B7%A5%E5%A0%B4%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E8%B3%80%E5%B8%82%E9%98%BF%E4%BF%9D891&output=embed"
             class="h-full min-h-[520px] w-full border-0"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -310,9 +322,9 @@
   </main>
 
   <footer class="border-t border-ink/10 px-5 py-10 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.18em] text-ink/45 md:flex-row">
-      <p>Copyright © 修理工房 名張店</p>
-      <p>Shoes / Bags / PC / Keys / Stamps</p>
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs font-bold uppercase tracking-[.16em] text-ink/45 md:flex-row">
+      <p>株式会社青山自動車整備工場</p>
+      <p>Source: LOTAS CLUB / Yahoo! Map / Mapion</p>
     </div>
   </footer>
 
@@ -324,7 +336,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0.16 });
 
     document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
   </script>
